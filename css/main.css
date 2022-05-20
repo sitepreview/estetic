@@ -234,7 +234,6 @@ header nav ul a {
 }
 
 .logo img {
-  width: 185px;
   height: 78px;
   margin: 5px 0 2px 0;
 }
@@ -3366,13 +3365,23 @@ section .delivery-payment__title {
   }
 
   .logo img {
-    width: 180px;
     height: 73px;
   }
 
   h2.title {
     margin-bottom: 35px;
     font-size: 43px;
+  }
+
+  .popular__item {
+    max-width: 436px;
+  }
+
+  .popular__item span {
+    max-width: 53%;
+    font-size: 22px;
+    top: 35px;
+    left: 35px;
   }
 
   .popular__button {
@@ -3484,6 +3493,18 @@ section .delivery-payment__title {
     margin-right: 15px;
   }
 
+  .popular__item {
+    max-width: 350px;
+  }
+
+  .popular__item span {
+    max-width: 55%;
+    font-size: 19px;
+    line-height: 30px;
+    top: 30px;
+    left: 30px;
+  }
+
   .account__right {
     padding-right: 55px;
   }
@@ -3502,14 +3523,6 @@ section .delivery-payment__title {
 
   .new__top, .week__top {
     height: 300px; /*350*/
-  }
-
-  .popular__item {
-    max-width: 436px;
-  }
-
-  .popular__item span {
-    max-width: 55%;
   }
 
   .contacts__map .container {
@@ -3728,20 +3741,6 @@ section .delivery-payment__title {
     max-width: none;
   }
 
-  .popular__services {
-    gap: 18px;
-  }
-
-  .popular__row {
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-  }
-
-  .popular__item {
-    max-width: 480px;
-  }
-
   .about__right div {
     line-height: 42px;
   }
@@ -3751,7 +3750,7 @@ section .delivery-payment__title {
   }
 
   .popular__item span {
-    max-width: 46%;
+    max-width: 54%;
   }
 
   .header__top {
@@ -3760,13 +3759,11 @@ section .delivery-payment__title {
   }
 
   .logo img {
-    width: 170px;
     height: 63px;
   }
 
   .logo__text {
     font-size: 8px;
-    margin-left: 7px;
   }
 
   .header__main {
@@ -3874,10 +3871,6 @@ section .delivery-payment__title {
   h2.title {
     font-size: 33px;
     margin-bottom: 25px;
-  }
-
-  .popular__item span {
-    font-size: 21px;
   }
 
   .popular__button {
@@ -4096,6 +4089,16 @@ section .delivery-payment__title {
 
   .header-mob {
     display: block;
+  }
+
+  .popular__services {
+    gap: 18px;
+  }
+
+  .popular__row {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
   }
 
   .catalog__filters_button_mob {
