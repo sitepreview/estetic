@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Карточка товара</title>
+	<!-- ШРИФТЫ ВРЕМЕННЫЕ НАЧАЛО -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Tenor+Sans&display=swap" rel="stylesheet">
+	<!-- ШРИФТЫ ВРЕМЕННЫЕ КОНЕЦ -->
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="header__top">
+			<div class="container">
+				<div class="header__top_inner">
+					<div class="header__city">
+						<a href="#">
+							<div><img src="images/header/location-image.png" alt="location"></div>
+							<div class="city__text">г. Москва</div>
+						</a>	
+					</div>
+					<nav>
+						<ul>
+							<a href="#"><li>Акции и скидки</li></a>
+							<a href="#"><li>Доставка и оплата</li></a>
+							<a href="#"><li>Обучение</li></a>
+							<a href="posts.html"><li>Статьи</li></a>
+							<a href="contacts.html"><li>Контакты</li></a>
+						</ul>
+					</nav>
+					<div class="header__socials">
+						<a href="#"><img src="images/socials/facebook-icon.png" alt="social"></a>
+						<a href="#"><img src="images/socials/instagram-icon.png" alt="social"></a>
+						<a href="#"><img src="images/socials/vk-icon.png" alt="social"></a>
+						<a href="#"><img src="images/socials/odnoklassniki-icon.png" alt="social"></a>
+					</div>
+					<div class="header__lang">
+						<a href="#">
+							<div class="lang__text">RU</div>
+							<div class="lang__arrow"><img src="images/header/lang-arrow-icon.svg" alt="arrow"></div>
+						</a>	
+					</div>
+					<div class="header__account">
+						<a href="login.html">
+							<div class="account__person"><img src="images/header/account-icon.png" alt="person"></div>
+							<div class="account__text">Вход / Регистрация</div>
+						</a>	
+					</div>
+				</div>	
+			</div>	
+		</div>
+		<div class="header__main">
+			<div class="container">
+				<div class="header__main_inner">
+					<div class="header__logo">
+						<a href="#">
+							<div class="logo">
+								<a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+							</div>
+						</a>
+						<div class="logo__text">Дистанционная продажа (доставка) лекартсвенных средств невозможна</div>
+					</div>
+					<div class="header__catalog_search">
+						<div class="header__catalog">
+							<div class="catalog__name">Каталог</div>
+							<div class="catalog__burger">
+								<span></span>
+							</div>
+						</div>
+						<div class="header__search">
+							<input type="search" placeholder="Поиск">
+							<div class="search__button">
+							</div>
+						</div>
+					</div>	
+					<div class="header__stuff">
+						<a href="#">
+							<div>
+								<img src="images/header/like-icon.png" alt="liked">
+							</div>
+							<span>4</span>
+						</a>
+						<a href="#">
+							<div>
+								<img src="images/header/basket-icon.png" alt="basket">
+							</div>
+							<span>3</span>
+						</a>
+					</div>
+					<div class="header__phones">
+						<a href="#" class="header__number">
+							+7 (495) 640-58-89
+						</a href="#">
+						<a href="#" class="header__call">
+							Заказать звонок
+						</a href="#">
+					</div>	
+				</div>	
+			</div>	
+		</div>
+		<a href="#" class="header__expired">
+			<span>Товары по акции</span>
+			<div><img src="images/header/arrow-expired.svg" alt="arrow"></div>
+		</a>
+		<div class="catalog-tabs">
+			<div class="container">
+				<div class="catalog-tabs__container">
+					<div class="catalog-tabs__nav">
+						<div class="catalog-tabs__btn" data-catTab="#catTab_1">Акции этой недели</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_2">Новинки</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_3">Товары с ограниченным сроком годности</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_4">Косметологическая продукция</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_5">Мезотерапия</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_6">Контурная пластика</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_7">Косметический уход</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_8">Парафинотерапия</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_9">Депиляция</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_10">Массаж / Spa-уход / Обертывание</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_11">Косметика для волос</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_12">Все для ресниц и бровей</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_13">Инструменты и оборудование</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_14">Одноразовая продукция</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_15">Дезинфицирующие средства</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_16">Учебное пособие</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_17">Маникюр / педикюр</div>
+					</div>
+					<div class="catalog-tabs__content">
+						<div class="catalog-tabs__item" id="catTab_1">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_2">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_3">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_4">
+							<div class="catalog-tabs__accordion">
+								<div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Маски для лица и тела
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											<ul>
+												<li><a href="#">Очищающие маски</a></li>
+												<li><a href="#">Альгинатные (пластифицирующие) маски</a></li>
+												<li><a href="#">Маски на основе гиалуроновой кислоты</a></li>
+												<li><a href="#">Маски для жирной и проблемной кожи</a></li>
+												<li><a href="#">Омолаживающие маски</a></li>
+												<li><a href="#">Маски для глаз и век</a></li>
+												<li><a href="#">Маски для волос</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Очищающие средства
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Кремы для лица и тела
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Апператные гели
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Тоники
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Сыворотки и концетраты
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Расходные материалы в косметологии
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Косметические наборы для ухода за кожей
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Неинвазивная (безинъекционная) Карбокситерапия
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-tabs__item" id="catTab_5">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_6">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_7">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_8">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_9">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_10">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_11">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_12">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_13">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_14">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_15">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_16">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_17">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</header>
+	<div class="header-mob">
+		<div class="container">
+			<div class="header-mob__row">
+				<div class="header-mob__burger">
+					<span></span>
+				</div>
+				<div class="header-mob__logo"><a href="index.html"><img src="images/mobile/logo-mob.svg" alt="logo"></a></div>
+				<div class="header-mob__search"><img src="images/mobile/search-icon.svg" alt="search"></div>
+			</div>
+		</div>	
+		<div class="header-mob__row">
+			<div><img src="images/mobile/phone-icon.svg" alt="phone-call"></div>
+			<div><img src="images/mobile/like-icon.svg" alt="liked"></div>
+			<div><img src="images/mobile/basket-icon.svg" alt="basket"></div>
+			<div><img src="images/mobile/account-icon.svg" alt="account"></div>
+		</div>	
+	</div>
+	<div class="breadcrumbs breadcrumbs-mob__none">
+		<div class="container">
+			<div class="breadcrumbs__inner">
+				<div class="breadcrumbs__container">
+					<ul>
+						<li><a href="index.html" class="breadcrumbs__item-first">Главная</a>/</li>
+						<li><a href="#">Каталог</a>/</li>
+						<li><a href="#">Косметологическая продукция для лица и тела</a>/</li>
+						<li>Тоник для лица Увлажняющий, 150 мл</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<section class="product-card">
+		<div class="container">
+			<div class="product-card__inner">
+				<div class="product-card__row">
+					<div class="product-card__image">
+						<img src="images/product/product-card-image.jpg" alt="product">
+						<div class="product-card__image_action">
+							<img src="images/product-card/triangle.svg" alt="triangle">
+							<p>Акция<br>недели!</p>
+						</div>
+					</div>
+					<div class="product-card__col">
+						<div>
+							<img src="images/product/star-icon.svg" alt="star">
+							<img src="images/product/star-icon.svg" alt="star">
+							<img src="images/product/star-icon.svg" alt="star">
+							<img src="images/product/star-icon.svg" alt="star">
+							<img src="images/product/star-icon.svg" alt="star">
+						</div>
+						<div>Артикул: 162237</div>
+						<div>Тоник для лица Увлажняющий, 150 мл - Plazan (Россия)</div>
+						<div>
+							<span class="product-card__price_new">312 ₽</span>
+							<span class="product-card__price_old">325 ₽</span>
+						</div>
+						<div>Возможен самовывоз</div>
+						<div>
+							<button>В корзину</button>
+							<span class="product-card__like"></span>
+						</div>
+						<div>
+							<button><a href="#">Пройти обучение в Институте</a></button>
+						</div>
+					</div>
+					<div class="product-card__delivery">
+						<div class="product-card__delivery_title">
+							<div><img src="images/product-card/delivery-icon.svg" alt="truck"></div>
+							<span>Доставка</span>
+						</div>
+						<div class="product-card__delivery_container">
+							<div class="product-card__delivery_item">
+								<div>Самовывоз СДЭК</div>
+								<span>Информация о доставке</span>
+							</div>
+							<div class="product-card__delivery_item">
+								<div>Курьером</div>
+								<span>Информация о доставке</span>
+							</div>
+							<div class="product-card__delivery_item">
+								<div>Почта России</div>
+								<span>Информация о доставке</span>
+							</div>
+							<div class="product-card__delivery_item">
+								<div>Междугородняя экспресс-доставка</div>
+								<span>Информация о доставке</span>
+							</div>
+							<div class="product-card__delivery_item">
+								<div>Международная экспресс-доствака</div>
+								<span>Информация о доставке</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="product-card__tabs">
+					<div class="product-card__tabs_nav">
+						<div class="product-card__tabs_btn" data-prodCardTab="#prodCardTab_1">Описание</div>
+						<div class="product-card__tabs_btn" data-prodCardTab="#prodCardTab_2">Состав</div>
+						<div class="product-card__tabs_btn" data-prodCardTab="#prodCardTab_3">Действие</div>
+						<div class="product-card__tabs_btn" data-prodCardTab="#prodCardTab_4">Как купить</div>
+						<div class="product-card__tabs_btn" data-prodCardTab="#prodCardTab_5">Задать вопрос</div>
+						<div class="product-card__tabs_btn" data-prodCardTab="#prodCardTab_6">Сертификат</div>
+					</div>
+					<div class="product-card__tabs_content">
+						<div class="product-card__tabs_item" id="prodCardTab_1">Текст1</div>
+						<div class="product-card__tabs_item" id="prodCardTab_2">Вода дистиллированная, пропиленгликоль, глицерин дистиллированный, гиалуроновая кислота, аллантоин, гликозаминогликаны, бензизотиазолинон и метилизотиазолинон, парфюмерная композиция.</div>
+						<div class="product-card__tabs_item" id="prodCardTab_3">Текст3</div>
+						<div class="product-card__tabs_item" id="prodCardTab_4">Текст4</div>
+						<div class="product-card__tabs_item" id="prodCardTab_5">Текст5</div>
+						<div class="product-card__tabs_item" id="prodCardTab_6">Текст6</div>
+					</div>
+				</div>
+				<div class="product-card-mob__accordion">
+					<div class="product-card__accordion_item">
+						<div class="product-card__accordion_trigger">
+							<span class="product-card__accordion_title">Описание</span>
+							<span class="product-card__accordion_arrow"></span>
+						</div>
+						<div class="product-card__accordion_content">
+							Текст1
+						</div>
+					</div>
+					<div class="product-card__accordion_item">
+						<div class="product-card__accordion_trigger">
+							<span class="product-card__accordion_title">Состав</span>
+							<span class="product-card__accordion_arrow"></span>
+						</div>
+						<div class="product-card__accordion_content">
+							Вода дистиллированная, пропиленгликоль, глицерин дистиллированный, гиалуроновая кислота, аллантоин, гликозаминогликаны, бензизотиазолинон и метилизотиазолинон, парфюмерная композиция.
+						</div>
+					</div>
+					<div class="product-card__accordion_item">
+						<div class="product-card__accordion_trigger">
+							<span class="product-card__accordion_title">Действие</span>
+							<span class="product-card__accordion_arrow"></span>
+						</div>
+						<div class="product-card__accordion_content">
+							Текст3
+						</div>
+					</div>
+					<div class="product-card__accordion_item">
+						<div class="product-card__accordion_trigger">
+							<span class="product-card__accordion_title">Как купить</span>
+							<span class="product-card__accordion_arrow"></span>
+						</div>
+						<div class="product-card__accordion_content">
+							Текст4
+						</div>
+					</div>
+					<div class="product-card__accordion_item">
+						<div class="product-card__accordion_trigger">
+							<span class="product-card__accordion_title">Задать вопрос</span>
+							<span class="product-card__accordion_arrow"></span>
+						</div>
+						<div class="product-card__accordion_content">
+							Текст5
+						</div>
+					</div>
+					<div class="product-card__accordion_item">
+						<div class="product-card__accordion_trigger">
+							<span class="product-card__accordion_title">Сертификат</span>
+							<span class="product-card__accordion_arrow"></span>
+						</div>
+						<div class="product-card__accordion_content">
+							Текст6
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<section class="popular-category">
+		<div class="container">
+			<h2 class="title popular-category__title">Популярные товары из категории Тоники</h2>
+			<div class="popular-category__slider_container">
+				<div class="popular-category__slider">
+					<div class="popular-category__slide">
+						<div class="popular-slide__top">
+							<img src="images/product/prod1015.webp" alt="product">
+						</div>
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.png" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="popular-category__slide">
+						<div class="popular-slide__top">
+							<img src="images/product/prod1050.webp" alt="product">
+						</div>
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.png" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="popular-category__slide">
+						<div class="popular-slide__top">
+							<img src="images/product/product-image-1.jpg" alt="product">
+						</div>
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.png" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="popular-category__slide">
+						<div class="popular-slide__top">
+							<img src="images/product/product-image-2.jpg" alt="product">
+						</div>
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.png" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__column">
+					<nav>
+						<ul>
+							<li><a href="company.html">О компании</li></a>
+							<li><a href="#">Помощь покупателю</li></a>
+							<li><a href="#">Лицензия</li></a>
+							<li><a href="#">Карта сайта</li></a>
+							<li><a href="contacts.html">Контакты</li></a>
+							<li><a href="#">Политика компании</li></a>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<nav>
+						<ul>
+							<li><a href="#">Обучение</li></a>
+							<li><a href="#">Скачать прайс</li></a>
+							<li><a href="#">Доставка и самовывоз</li></a>
+							<li><a href="#">Обмен и возврат</li></a>
+							<li><a href="#">Блог</li></a>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<div class="footer__phone"><span>Телефон:</span> +7 (495) 640-58-89</div>
+					<div class="footer__mail"><span>Email:</span> info@esteticshop</div>
+					<div class="footer__socials">
+						<span>Социальные сети</span>
+						<div>
+							<a href="#"><img src="images/socials/facebook-icon.png" alt="social"></a>
+							<a href="#"><img src="images/socials/instagram-icon.png" alt="social"></a>
+							<a href="#"><img src="images/socials/vk-icon.png" alt="social"></a>
+							<a href="#"><img src="images/socials/odnoklassniki-icon.png" alt="social"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__column">
+					<span>Напишите нам:</span>
+					<div class="footer__row footer__row-1">
+						<a href="#"><img src="images/socials/whatsapp-icon.png" alt="social"></a>
+						<a href="#"><img src="images/socials/telegram-icon.png" alt="social"></a>
+						<a href="#"><img src="images/socials/viber-icon.png" alt="social"></a>
+					</div>
+					<div class="footer__row footer__row-2">
+						<a href="#"><img src="images/socials/mastercard-icon.png" alt="payment"></a>
+						<a href="#"><img src="images/socials/visa-icon.png" alt="payment"></a>
+					</div>
+					<div class="footer__row footer__row-3">
+						<a href="#"><img src="images/socials/sbp-icon.png" alt="payment"></a>
+						<a href="#"><img src="images/socials/mir-icon.png" alt="payment"></a>
+					</div>
+					<div class="footer__row footer__row-4">
+						<a href="#"><img src="images/socials/yamarket-icon.png" alt="market"></a>
+					</div>
+				</div>
+				<div class="footer__column">
+					<span>Наше приложение:</span>
+					<div class="footer__gplay">
+						<a href="#"><img src="images/socials/gplay-icon.png" alt="app"></a>
+					</div>
+					<div>
+						<a href="#"><img src="images/socials/astore-icon.png" alt="app"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom"></div>
+	</footer>
+	<!-- СКРИПТЫ НАЧАЛО -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- СКРИПТЫ КОНЕЦ -->
+</body>
+</html>
