@@ -3304,6 +3304,19 @@ section .delivery-payment__title {
 }
 
 @media (max-width: 1640px) {
+  .header__top {
+    font-size: 15px;
+    height: 54px;
+  }
+
+  .header__main {
+    height: 113px;
+  }
+
+  .header__expired {
+    height: 38px;
+  }
+
   .product.active .product__title_column {
     max-width: 179px;
   }
@@ -3340,8 +3353,12 @@ section .delivery-payment__title {
     margin-bottom: 48px;
   }
 
+  .first-slider__slide {
+    height: 378px;
+  }
+
   h1.first-slider__title {
-    font-size: 50px;
+    font-size: 47px;
     padding: 65px 0 35px 0;
   }
 
@@ -3357,6 +3374,10 @@ section .delivery-payment__title {
   .first-slider__sales {
     width: 262px;
     height: 70px;
+  }
+
+  .first-slider .slick-arrow {
+    bottom: 25px;
   }
 
   .slick-arrow {
@@ -3455,6 +3476,23 @@ section .delivery-payment__title {
 
   .article__more {
     font-size: 16px;
+  }
+
+  section.popular {
+    padding: 68px 0 100px 0;
+  }
+
+  .week-products {
+    margin: 130px 0 90px 0;
+    padding: 70px 0 100px 0;
+  }
+
+  section.about {
+    margin: 150px 0 160px 0;
+  }
+
+  section.articles {
+    margin: 160px 0 230px 0;
   }
 }
 
@@ -3664,20 +3702,6 @@ section .delivery-payment__title {
     padding: 0;
   }
 
-  .header__catalog {
-    width: 138px;
-  }
-
-  .header__call {
-    font-size: 15px;
-    width: 200px;
-  }
-
-  .header__number {
-    font-size: 15px;
-    width: 188px;
-  }
-
   .header__socials a {
     margin-right: 9px;
   }
@@ -3741,13 +3765,9 @@ section .delivery-payment__title {
     max-width: none;
   }
 
-  .about__right div {
-    line-height: 42px;
-  }
-
-  section.popular {
+  /*section.popular {
     padding: 68px 0 100px 0;
-  }
+  }*/
 
   .popular__item span {
     max-width: 54%;
@@ -3858,6 +3878,10 @@ section .delivery-payment__title {
   .slick-arrow {
     width: 70px;
     height: 70px;
+  }
+
+  .first-slider .slick-arrow {
+    bottom: 40px;
   }
 
   .first-slider .slick-next {
@@ -3983,7 +4007,7 @@ section .delivery-payment__title {
     margin: 6px 0 7px 0;
   }
 
-  .week-products {
+  /*.week-products {
     margin: 130px 0 90px 0;
     padding: 70px 0 100px 0;
   }
@@ -3994,7 +4018,7 @@ section .delivery-payment__title {
 
   section.articles {
     margin: 160px 0 230px 0;
-  }
+  }*/
 
   footer {
     font-size: 14px;
@@ -4002,30 +4026,12 @@ section .delivery-payment__title {
 }
 
 @media (max-width: 1250px) {
-  .header__top {
-    font-size: 14px;
-  }
-
   .city__text {
     font-size: 14px;
   }
 
   .header__main {
     font-size: 14px;
-  }
-
-  .header__call {
-    font-size: 14px;
-    width: 165px;
-  }
-
-  .header__number {
-    font-size: 14px;
-    width: 165px;
-  }
-
-  .header__catalog {
-    width: 125px;
   }
 
   .header__search input {
