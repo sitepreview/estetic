@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 ul[class],
 ol[class] {
   padding: 0;
@@ -2983,6 +2987,10 @@ section .popular-category__title {
   background: url(../images/product-card/accordion-arrow-active.svg);
 }
 
+section .delivery__title {
+  margin-top: 47px;
+}
+
 .delivery__tabs {
   max-width: 1396px;
   margin: 0 auto;
@@ -3167,7 +3175,7 @@ section .delivery-payment__title {
 .delivery-payment__tabs_content_title {
   font-size: 25px;
   line-height: 52px;
-  margin: 48px 0 32px;
+  margin-bottom: 32px;
 }
 
 .delivery-payment__tabs_content_block {
@@ -3176,6 +3184,30 @@ section .delivery-payment__title {
 
 .delivery-payment__tabs_content_block div:nth-child(2) {
   margin: 18px 0;
+}
+
+.delivery__tabs-mob, .delivery-payment__tabs-mob {
+  display: none;
+}
+
+.delivery__tabs-mob_item, .delivery-payment__tabs-mob_item {
+  display: none;
+}
+
+.delivery__tabs-mob_item.active, .delivery-payment__tabs-mob_item.active {
+  display: block;
+}
+
+.delivery__tabs-mob select, .delivery-payment__tabs-mob select {
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../images/cart/select-arrow.png) no-repeat center right 17px #ECECEC;
+  border: none;
+  height: 48px;
+  padding-left: 20px;
+  width: 340px;
+  border-radius: 2px;
 }
 
 /* МЕДИА ЗАПРОСЫ НАЧАЛО */
@@ -3494,6 +3526,10 @@ section .delivery-payment__title {
   section.articles {
     margin: 160px 0 230px 0;
   }
+
+  section .delivery__title {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -3565,6 +3601,116 @@ section .delivery-payment__title {
 
   .contacts__map .container {
     padding-right: 0;
+  }
+
+  .delivery__tabs {
+    max-width: 1043px;
+  }
+
+  .delivery-payment__tabs {
+    max-width: 930px;
+  }
+
+  .delivery__tabs_content {
+    margin-top: 50px;
+  }
+
+  .delivery__tabs_btn, .delivery-payment__tabs_btn {
+    font-size: 17px;
+  }
+
+  .delivery__tabs_btn {
+    padding: 19px 18px;
+  }
+
+  .delivery-payment__tabs_btn {
+    padding: 25px 20px;
+  }
+
+  .delivery__tabs_btn:first-child {
+    padding-left: 18px;
+  }
+
+  .delivery__tabs_btn:last-child {
+    padding-right: 18px;
+  }
+
+  .delivery-payment__tabs_btn:first-child {
+    padding-left: 20px;
+  }
+
+  .delivery-payment__tabs_btn:last-child {
+    padding-right: 20px;
+  }
+
+  .delivery__tabs_nav {
+    height: 87px;
+  }
+
+  .delivery-payment__tabs_nav {
+    height: 75px;
+  }
+
+  .delivery__tabs_content_title {
+    font-size: 22px;
+  }
+
+  .delivery-payment__tabs_content_title {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+
+  .delivery__tabs_content_block, .delivery-payment__tabs_content_block {
+    font-size: 17px;
+  }
+
+  .delivery__tabs_content_block-1 {
+    margin: 15px 0 28px 0;
+  }
+
+  .delivery__tabs_content_block-1 p:first-child {
+    margin-bottom: 10px;
+  }
+
+  .delivery__tabs_content_block ol li:nth-child(2) {
+    margin: 20px 0;
+  }
+
+  .delivery__tabs_content_block-3 {
+    margin-top: 40px;
+  }
+
+  .delivery-warnings {
+    margin-top: 120px;
+  }
+
+  .delivery-warning {
+    padding: 52px 45px 90px 80px;
+  }
+
+  .delivery-warning__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .delivery-warning__content {
+    font-size: 17px;
+  }
+
+  section.delivery-payment {
+    margin: 90px 0 120px 0;
+  }
+
+  .delivery-payment__tabs_content {
+    margin-top: 30px;
+  }
+
+  .delivery-payment__tabs_content_block div:nth-child(2) {
+    margin: 13px 0;
+  }
+
+  .delivery-payment__area {
+    font-size: 14px;
   }
 }
 
@@ -4085,6 +4231,59 @@ section .delivery-payment__title {
 
   .company-block-2 .company__image {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .delivery__tabs-mob, .delivery-payment__tabs-mob {
+    display: block;
+  }
+
+  .delivery__tabs, .delivery-payment__tabs {
+    display: none;
+  }
+
+  .delivery-warnings {
+    flex-direction: column;
+  }
+
+  .delivery-warning {
+    width: 100%;
+  }
+
+  .delivery-warning:first-child {
+    margin-bottom: 9px;
+  }
+
+  section .delivery__title {
+    margin: 48px 0 40px 0;
+  }
+
+  .delivery__tabs_content_title, .delivery-payment__tabs_content_title {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 17px;
+  }
+
+  .delivery__tabs-mob_item, .delivery-payment__tabs-mob_item {
+    margin-top: 25px;
+  }
+
+  .delivery__tabs_content_block, .delivery-payment__tabs_content_block {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .delivery-payment__area {
+    margin-bottom: 22px;
+  }
+
+  .delivery-warnings {
+    margin-top: 42px;
+  }
+
+  section.delivery-payment {
+    margin: 38px 0 92px 0;
   }
 }
 
@@ -4821,6 +5020,73 @@ section .delivery-payment__title {
 
   .contacts__bottom {
     font-size: 14px;
+  }
+
+  .delivery__tabs-mob select, .delivery-payment__tabs-mob select {
+    font-size: 14px;
+    width: 300px;
+  }
+
+  .delivery__tabs_content_title, .delivery-payment__tabs_content_title {
+    font-size: 18px;
+  }
+
+  .delivery__tabs_content_block ol li:nth-child(2) {
+    margin: 24px 0;
+  }
+
+  .delivery__tabs_content_block ol li p {
+    margin-top: 16px;
+  }
+
+  .delivery__tabs_content_block-3 {
+    margin-top: 28px;
+  }
+
+  .delivery__tabs_content_block ul {
+    margin-top: 22px;
+  }
+
+  .delivery-warning {
+    padding: 25px 15px 29px 15px;
+  }
+
+  .delivery-warning__title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .delivery-warning__content {
+    font-size: 14px;
+  }
+
+  .delivery-warning__content div:nth-child(2) {
+    margin: 10px 0;
+  }
+
+  .delivery-payment__area {
+    font-size: 12px;
+    justify-content: space-between;
+  }
+
+  .delivery-payment__tabs_content_block {
+    padding-left: 16px;
+  }
+
+  .delivery-payment__tabs_content_block div:nth-child(2) {
+    margin: 16px 0;
+  }
+
+  .delivery-payment__tabs_content_block div {
+    position: relative;
+  }
+
+  .delivery-payment__tabs_content_block div:before {
+    content: url(../images/company/list-style-circle.svg);
+    position: absolute;
+    left: -17px;
+    top: 0;
   }
 }
 

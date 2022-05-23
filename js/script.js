@@ -410,5 +410,18 @@ document.addEventListener('DOMContentLoaded', function(){
       }
 
       document.querySelector('.delivery-payment__tabs_btn').click();
+
+
+      document.querySelector('.delivery__tabs-mob_nav').addEventListener('change', function() {
+        document.querySelectorAll('.delivery__tabs-mob_item').forEach((n, i) => {
+          n.classList.toggle('active', i === this.selectedIndex);
+        });
+      });
+
+      document.querySelector('.delivery-payment__tabs-mob_nav').addEventListener('change', function() {
+        document.querySelectorAll('.delivery-payment__tabs-mob_item').forEach((n, i) => {
+          n.classList.toggle('active', i === this.selectedIndex);
+        });
+      });
   }
 });
