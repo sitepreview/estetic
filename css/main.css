@@ -3423,7 +3423,7 @@ section .delivery-payment__title {
 
   h2.title {
     margin-bottom: 35px;
-    font-size: 43px;
+    font-size: 39px;
   }
 
   .popular__item {
@@ -3530,6 +3530,130 @@ section .delivery-payment__title {
   section .delivery__title {
     margin-top: 0;
   }
+
+  .delivery__tabs_btn, .delivery-payment__tabs_btn {
+    font-size: 17px;
+  }
+
+    .delivery__tabs {
+    max-width: 1043px;
+  }
+
+  .delivery-payment__tabs {
+    max-width: 930px;
+  }
+
+  .delivery__tabs_content, .delivery-payment__tabs_content {
+    margin-top: 25px;
+  }
+
+  .delivery__tabs_btn {
+    padding: 19px 18px;
+  }
+
+  .delivery-payment__tabs_btn {
+    padding: 25px 20px;
+  }
+
+  .delivery__tabs_btn:first-child {
+    padding-left: 18px;
+  }
+
+  .delivery__tabs_btn:last-child {
+    padding-right: 18px;
+  }
+
+  .delivery-payment__tabs_btn:first-child {
+    padding-left: 20px;
+  }
+
+  .delivery-payment__tabs_btn:last-child {
+    padding-right: 20px;
+  }
+
+  .delivery__tabs_nav {
+    height: 87px;
+  }
+
+  .delivery-payment__tabs_nav {
+    height: 75px;
+  }
+
+  .delivery__tabs_content_title {
+    font-size: 20px;
+  }
+
+  .delivery-payment__tabs_content_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .delivery__tabs_content_block, .delivery-payment__tabs_content_block {
+    font-size: 15px;
+  }
+
+  .delivery__tabs_content_block-1 {
+    margin: 5px 0 18px 0;
+  }
+
+  .delivery__tabs_content_block-1 p:first-child {
+    margin-bottom: 5px;
+  }
+
+  .delivery__tabs_content_block ol li:nth-child(2) {
+    margin: 15px 0;
+  }
+
+  .delivery__tabs_content_block-3 {
+    margin-top: 40px;
+  }
+
+  .delivery-warnings {
+    margin-top: 100px;
+  }
+
+  .delivery-warning {
+    padding: 52px 45px 90px 80px;
+  }
+
+  .delivery-warning__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .delivery-warning__content {
+    font-size: 17px;
+  }
+
+  section.delivery-payment {
+    margin: 70px 0 100px 0;
+  }
+
+  .delivery-payment__tabs_content_block div:nth-child(2) {
+    margin: 13px 0;
+  }
+
+  .delivery-payment__area {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .delivery__tabs_content_block ol li p {
+    margin-top: 10px;
+  }
+
+  .back-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .back-link img {
+    width: 75%;
+  }
+
+  .back-link a:first-child {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -3601,116 +3725,6 @@ section .delivery-payment__title {
 
   .contacts__map .container {
     padding-right: 0;
-  }
-
-  .delivery__tabs {
-    max-width: 1043px;
-  }
-
-  .delivery-payment__tabs {
-    max-width: 930px;
-  }
-
-  .delivery__tabs_content {
-    margin-top: 50px;
-  }
-
-  .delivery__tabs_btn, .delivery-payment__tabs_btn {
-    font-size: 17px;
-  }
-
-  .delivery__tabs_btn {
-    padding: 19px 18px;
-  }
-
-  .delivery-payment__tabs_btn {
-    padding: 25px 20px;
-  }
-
-  .delivery__tabs_btn:first-child {
-    padding-left: 18px;
-  }
-
-  .delivery__tabs_btn:last-child {
-    padding-right: 18px;
-  }
-
-  .delivery-payment__tabs_btn:first-child {
-    padding-left: 20px;
-  }
-
-  .delivery-payment__tabs_btn:last-child {
-    padding-right: 20px;
-  }
-
-  .delivery__tabs_nav {
-    height: 87px;
-  }
-
-  .delivery-payment__tabs_nav {
-    height: 75px;
-  }
-
-  .delivery__tabs_content_title {
-    font-size: 22px;
-  }
-
-  .delivery-payment__tabs_content_title {
-    font-size: 22px;
-    margin-bottom: 13px;
-  }
-
-  .delivery__tabs_content_block, .delivery-payment__tabs_content_block {
-    font-size: 17px;
-  }
-
-  .delivery__tabs_content_block-1 {
-    margin: 15px 0 28px 0;
-  }
-
-  .delivery__tabs_content_block-1 p:first-child {
-    margin-bottom: 10px;
-  }
-
-  .delivery__tabs_content_block ol li:nth-child(2) {
-    margin: 20px 0;
-  }
-
-  .delivery__tabs_content_block-3 {
-    margin-top: 40px;
-  }
-
-  .delivery-warnings {
-    margin-top: 120px;
-  }
-
-  .delivery-warning {
-    padding: 52px 45px 90px 80px;
-  }
-
-  .delivery-warning__title {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-
-  .delivery-warning__content {
-    font-size: 17px;
-  }
-
-  section.delivery-payment {
-    margin: 90px 0 120px 0;
-  }
-
-  .delivery-payment__tabs_content {
-    margin-top: 30px;
-  }
-
-  .delivery-payment__tabs_content_block div:nth-child(2) {
-    margin: 13px 0;
-  }
-
-  .delivery-payment__area {
-    font-size: 14px;
   }
 }
 
