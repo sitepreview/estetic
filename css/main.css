@@ -3214,36 +3214,29 @@ section .delivery-payment__title {
   padding-left: 20px;
 }
 
-.delivery-payment__tabs_item:nth-child(3) ul,
 .delivery-payment__tabs-mob_item:nth-child(3) ul {
   margin: 0;
-  padding-left: 18px;
+  padding-left: 0;
 }
 
-.delivery__tabs_item:nth-child(5) .delivery__tabs_content_block ol li:nth-child(2),
-.delivery__tabs-mob_item:nth-child(5) .delivery__tabs-mob_content_block ol li:nth-child(2) {
-  margin: 15px 0 0 0;
-}
-
-.delivery__tabs_item:nth-child(5) .delivery__tabs_content_block-1, .delivery__tabs_item:nth-child(6) .delivery__tabs_content_block-1, .delivery-payment__tabs_item:nth-child(3) .delivery__tabs_content_block-1,
-.delivery__tabs-mob_item:nth-child(5) .delivery__tabs-mob_content_block-1, .delivery__tabs-mob_item:nth-child(6) .delivery__tabs-mob_content_block-1, .delivery-payment__tabs-mob_item:nth-child(3) .delivery__tabs-mob_content_block-1 {
-  margin: 5px 0 0 0;
-}
-
-.delivery__tabs_content_block table {
+.delivery-payment__tabs_content_block table {
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
 }
 
-.delivery__tabs_content_block table tr {
+.delivery-payment__tabs_content_block table tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 5px 5px 30px 5px;
 }
 
-.delivery__tabs_content_block table td {
+.delivery-payment__tabs_content_block table td {
   padding: 5px 5px 30px 5px;
+}
+
+.delivery-payment__tabs_content_block-list {
+  padding-left: 16px;
 }
 
 /* МЕДИА ЗАПРОСЫ НАЧАЛО */
@@ -5191,10 +5184,6 @@ section .delivery-payment__title {
   .delivery-payment__area {
     font-size: 12px;
     justify-content: space-between;
-  }
-
-  .delivery-payment__tabs_content_block {
-    padding-left: 16px;
   }
 
   .delivery-payment__tabs_content_block div:nth-child(2) {
