@@ -3973,6 +3973,114 @@ section .delivery-payment__title {
   .popular-category__slider .slick-arrow {
     bottom: 37px;
   }
+
+  .shopping-cart__inner {
+    font-size: 21px;
+    max-width: 1050px;
+  }
+
+  .shopping-cart__price_new, .shopping-cart__amount {
+    font-size: 28px;
+  }
+
+  .shopping-cart__price_old {
+    font-size: 22px;
+  }
+
+  .shopping-cart__quantity_none {
+    margin-left: 104px;
+  }
+
+  .shopping-cart__quantity {
+    width: 97px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .shopping-cart__info {
+    justify-content: flex-start;
+  }
+
+  .shopping-cart__info_container-1 {
+    width: 15%;
+  }
+
+  .shopping-cart__info_container-2 {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .shopping-cart__name {
+    width: 306px;
+    line-height: normal;
+  }
+
+  .shopping-cart__promo {
+    font-size: 16px;
+    width: 350px;
+    height: 50px;
+  }
+
+  .shopping-cart__buy {
+    font-size: 16px;
+  }
+
+  .shopping-cart__buy_margin {
+    margin: 9px 0 5px 0;
+  }
+
+  .shopping-cart__total {
+    font-size: 21px;
+  }
+
+  .cart-button {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 264px;
+    height: 58px;
+  }
+
+  section.shopping-cart {
+    margin-bottom: 90px;
+  }
+
+  .shopping-application__inner {
+    max-width: 780px;
+  }
+
+  .shopping-application__total input {
+    width: 275px;
+  }
+
+  .shopping-application__title_small {
+    font-size: 18px;
+  }
+
+  .shopping-application-input {
+    font-size: 16px;
+    width: 380px;
+  }
+
+  .shopping-application__inputs textarea {
+    width: 780px;
+  }
+
+  .shopping-application__mark {
+    font-size: 16px;
+  }
+
+  .shopping-application__text {
+    font-size: 18px;
+    margin: 25px 0 20px 0;
+  }
+
+  .shopping-application__total {
+    font-size: 21px;
+  }
+
+  section.shopping-application {
+    margin-bottom: 140px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -4800,6 +4908,116 @@ section .delivery-payment__title {
   .popular-category__slider .slick-arrow {
     bottom: 55px;
   }
+
+  section.shopping-cart {
+    margin: 40px 0 70px 0;
+  }
+
+  .shopping-cart__titles {
+    margin-bottom: 15px;
+  }
+
+  .shopping-cart__inner {
+    font-size: 18px;
+    max-width: 900px;
+  }
+
+  .shopping-cart__info_container-1 {
+    width: 13%;
+  }
+
+  .shopping-cart hr {
+    font-size: 14px;
+  }
+
+  .shopping-cart__price_new, .shopping-cart__amount {
+    font-size: 22px;
+  }
+
+  .shopping-cart__quantity {
+    width: 85px;
+    height: 37px;
+    font-size: 16px;
+    margin-left: 13px;
+  }
+
+  .shopping-cart__quantity_none {
+    margin-left: 75px;
+  }
+
+  .shopping-cart__price_old {
+    font-size: 18px;
+    margin-left: 13px;
+  }
+
+  .shopping-cart__buy {
+    margin-top: 25px;
+    font-size: 14px;
+  }
+
+  .shopping-cart__promo {
+    font-size: 14px;
+    width: 310px;
+    height: 45px;
+  }
+
+  .shopping-cart__total {
+    font-size: 18px;
+  }
+
+  .cart-button {
+    font-size: 18px;
+    margin-top: 15px;
+    width: 230px;
+    height: 53px;
+  }
+
+  section.shopping-application {
+    margin-bottom: 120px;
+  }
+
+  .shopping-application__inner {
+    max-width: 714px;
+  }
+
+  .shopping-application__title_small {
+    font-size: 16px;
+  }
+
+  .shopping-application__container {
+    margin-top: 10px;
+  }
+
+  .shopping-application-input {
+    font-size: 14px;
+    width: 350px;
+    margin: 7px;
+  }
+
+  .shopping-application__inputs textarea {
+    width: 714px;
+  }
+
+  .shopping-application__inputs select {
+    background-size: 6%;
+  }
+
+  .shopping-application__mark {
+    font-size: 14px;
+  }
+
+  .shopping-application__text {
+    font-size: 16px;
+    margin: 15px 0 15px 0;
+  }
+
+  .shopping-application__total {
+    font-size: 18px;
+  }
+
+  .shopping-application__total input {
+    width: 250px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -4813,19 +5031,6 @@ section .delivery-payment__title {
 
   .first-slider .slick-arrow {
     bottom: 60px;
-  }
-
-  .shopping-cart__info {
-    justify-content: flex-start;
-  }
-
-  .shopping-cart__info_container-2 {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .shopping-cart__name {
-    width: 306px;
   }
 
   .week__slide {
