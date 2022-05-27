@@ -3954,11 +3954,11 @@ section .delivery-payment__title {
     height: 360px;
   }
 
-  .popular-slide__bottom .new__bottom_title {
+  .new__bottom_title {
     font-size: 18px;
   }
 
-  .popular-slide__bottom .new__bottom_row span {
+  .new__bottom_row span {
     font-size: 28px;
   }
 
@@ -4893,11 +4893,11 @@ section .delivery-payment__title {
     height: 300px;
   }
 
-  .popular-slide__bottom .new__bottom_title {
+  .new__bottom_title {
     font-size: 16px;
   }
 
-  .popular-slide__bottom .new__bottom_row span {
+  .new__bottom_row span {
     font-size: 24px;
   }
 
@@ -5223,6 +5223,14 @@ section .delivery-payment__title {
     align-items: center;
   }
 
+  .product-card__image {
+    width: auto;
+  }
+
+  .product-card__image_action img {
+    width: auto;
+  }
+
   .product-card__image_action {
     width: 160px;
   }
@@ -5270,7 +5278,11 @@ section .delivery-payment__title {
   }
 
   .popular-category__slider .slick-arrow {
-    bottom: 20px;
+    bottom: 35px;
+  }
+
+  .popular-category__slider_container {
+    width: 100%;
   }
 
   section.shopping-cart {
@@ -5701,6 +5713,9 @@ section .delivery-payment__title {
     width: 68px;
     height: 29px;
     font-size: 16px;
+    margin: 0;
+    position: absolute;
+    top: 84px;
   }
 
   .product.active .product__bottom {
@@ -5983,8 +5998,9 @@ section .delivery-payment__title {
     font-size: 16px;
   }
 
-  .popular-slide__bottom img {
+  section .popular-slide__bottom img {
     width: 21px;
+    height: auto;
   }
 
   .popular-slide__top {
