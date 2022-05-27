@@ -5749,7 +5749,7 @@ section .delivery-payment__title {
 
   .product__counter input {
     padding: 0;
-    width: 40%;
+    width: 100%;
   }
 
   .product.active .product__bottom {
