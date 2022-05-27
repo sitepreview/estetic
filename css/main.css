@@ -5739,10 +5739,14 @@ section .delivery-payment__title {
   .product.active .product__counter {
     width: 68px;
     height: 29px;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
     position: absolute;
     top: 84px;
+  }
+
+  .product__counter input {
+    padding: 0;
   }
 
   .product.active .product__bottom {
