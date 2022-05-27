@@ -5743,10 +5743,13 @@ section .delivery-payment__title {
     margin: 0;
     position: absolute;
     top: 84px;
+    display: flex;
+    justify-content: center;
   }
 
   .product__counter input {
     padding: 0;
+    width: 40%;
   }
 
   .product.active .product__bottom {
