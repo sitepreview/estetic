@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Корзина товаров</title>
+	<title>Статья</title>
 	<!-- ШРИФТЫ ВРЕМЕННЫЕ НАЧАЛО -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Tenor+Sans&display=swap" rel="stylesheet">
 	<!-- ШРИФТЫ ВРЕМЕННЫЕ КОНЕЦ -->
-	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -287,128 +287,155 @@
 			<div><img src="images/mobile/account-icon.svg" alt="account"></div>
 		</div>	
 	</div>
-	<section class="shopping-cart">
+	<section class="post">
 		<div class="container">
-			<div class="shopping-cart__inner">
-				<h2 class="title shopping-cart__title">Корзина товаров</h2>
-				<div class="shopping-cart__titles">
-					<div>Наименование</div>
-					<div class="shopping-cart__numbers">
-						<div>Цена</div>
-						<div>Количество</div>
-						<div>Сумма</div>
-					</div>
+			<div class="post__inner">
+				<div class="back-link">
+					<a href="#"><img src="images/back-link.png" alt="back-arrow"></a>
+					<a href="#"><span>Назад</span></a>
 				</div>
-				<hr>
-				<div class="shopping-cart__info">
-					<div class="shopping-cart__info_container-1">
-						<div class="shopping-cart__image">
-							<img src="images/cart/product-image.png" alt="product">
-						</div>
-					</div>	
-					<div class="shopping-cart__info_container-2">
-						<div class="shopping-cart__name">
-							Тоник для лица Увлажняющий, 150 мл - Plazan Россия
-						</div>
-						<div class="shopping-cart__info__right">
-							<div class="shopping-cart__price">
-								<div class="shopping-cart__price_new">312 ₽</div>
-								<div class="shopping-cart__price_old">325 ₽</div>
-							</div>
-							<div class="shopping-cart__quantity">
-								<input type="button" id="buttonCountMinus" value="-">
-								<div id="buttonCountNumber">1</div>
-								<input type="button" id="buttonCountPlus" value="+">
-							</div>
-							<div class="shopping-cart__amount">312 ₽</div>
-						</div>	
+				<div class="post__container">
+					<div class="post__image">
+						<img src="images/articles/post-image.jpg" alt="post-image">
 					</div>
-					<div class="shopping-cart-mob__close"><img src="images/mobile/green-cross-icon.svg" alt="close"></div>
-				</div>
-				<hr>
-				<div class="shopping-cart__info">
-					<div class="shopping-cart__info_container-1">
-						<div class="shopping-cart__image">
-							<img src="images/cart/product-image.png" alt="product">
+					<div class="post__text">
+						<div class="post__date">13 марта, 2020</div>
+						<div class="post__title">Новая линия косметики</div>
+						<div class="post__content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<br><br>
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 						</div>
-					</div>	
-					<div class="shopping-cart__info_container-2">
-						<div class="shopping-cart__name">
-							Тоник для лица Увлажняющий, 150 мл - Plazan Россия
-						</div>
-						<div class="shopping-cart__info__right">
-							<div class="shopping-cart__price">
-								<div class="shopping-cart__price_new">312 ₽</div>
-								<!-- <div class="shopping-cart__price_old">325 ₽</div> -->
-							</div>
-							<div class="shopping-cart__quantity shopping-cart__quantity_none">
-								<input type="button" id="buttonCountMinus" value="-">
-								<div id="buttonCountNumber">1</div>
-								<input type="button" id="buttonCountPlus" value="+">
-							</div>
-							<div class="shopping-cart__amount">312 ₽</div>
-						</div>	
-					</div>
-					<div class="shopping-cart-mob__close"><img src="images/mobile/green-cross-icon.svg" alt="close"></div>
-				</div>
-				<hr>
-				<div class="shopping-cart__buy">
-					<div>
-						<input type="text" placeholder="Введите код купона для скидки" class="shopping-cart__promo">
-						<div class="shopping-cart__buy_note">(можно использовать только один купон)</div>
-					</div>
-					<div class="shopping-cart__buy_container">
-						<div>Подытог: 1149 ₽</div>
-						<div class="shopping-cart__buy_margin">Скидка: 13 ₽</div>
-						<div class="shopping-cart__total">Итого: 1136 ₽</div>
-						<input type="submit" value="Быстрый заказ" class="cart-button">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="shopping-application">
+	<section class="recommend">
 		<div class="container">
-			<div class="shopping-application__inner">
-				<h2 class="title shopping-application__title">Оформление заявки</h2>
-				<div class="shopping-application__title_small">Ваши данные:</div>
-				<div class="shopping-application__container">
-					<div class="shopping-application__container_row">
-						<div class="shopping-application__inputs">
-							<input type="text" placeholder="Имя*" class="shopping-application-input">
-							<input type="tel" placeholder="Телефон*" class="shopping-application-input">
-							<div>
-								<select class="shopping-application-input">
-									<option value="" selected="selected">Доставка</option>
-									<option value="">Текст 1</option>
-									<option value="">Текст 2</option>
-								</select>
-							</div>	
+			<h2 class="title">Рекомендации для вас</h2>
+			<div id="recommend__slider" class="swiper">
+				<div class="swiper-wrapper">
+					<div class="recommend-slide swiper-slide">
+						<div class="popular-slide__top">
+							<img src="images/product/prod1015.webp" alt="product">
+							<div class="recommend__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
 						</div>
-						<div class="shopping-application__inputs">
-							<input type="text" placeholder="Фамилия*" class="shopping-application-input">
-							<input type="email" placeholder="E-mail*" class="shopping-application-input">
-							<div>
-								<select class="shopping-application-input">
-									<option value="" selected="selected">Выбрать город</option>
-									<option value="">Текст 1</option>
-									<option value="">Текст 2</option>
-								</select>
-							</div>	
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
 						</div>
-					</div>	
-					<div class="shopping-application__inputs">
-						<textarea type="text" placeholder="Комментарий к заказу" class="shopping-application-input"></textarea>
 					</div>
-				</div>
-				<div class="shopping-application__mark">* Поля, помеченные звездочкой, обязательны к заполнению.</div>
-				<div class="shopping-application__text">Если Вы - новый пользователь, то личный кабинет мы создадим за Вас и пришлём пароли на почту. Если Вы не авторизованы, мы узнаем Вас по e-mail и привяжем эту заявку к Вашему аккаунту.</div>
-				<div class="shopping-application__total">
-					<div>Итого: 1136 ₽</div>
-					<input type="submit" value="Оформить заказ" class="cart-button">
-				</div>
+					<div class="recommend-slide swiper-slide">
+						<div class="popular-slide__top">
+							<img src="images/product/prod1050.webp" alt="product">
+							<div class="recommend__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="recommend-slide swiper-slide">
+						<div class="popular-slide__top">
+							<img src="images/product/product-image-1.jpg" alt="product">
+							<div class="recommend__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="recommend-slide swiper-slide">
+						<div class="popular-slide__top">
+							<img src="images/product/product-image-2.jpg" alt="product">
+							<div class="recommend__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="recommend-slide swiper-slide">
+						<div class="popular-slide__top">
+							<img src="images/product/prod1015.webp" alt="product">
+							<div class="recommend__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>
+						<div class="popular-slide__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>	
 			</div>
-		</div>
+			<div class="recommend-slider-next"></div>
+			<div class="recommend-slider-prev"></div>
+		</div>	
 	</section>
 	<footer>
 		<div class="container">
@@ -486,6 +513,7 @@
 	<script src="js/jquery.ui.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 	<!-- СКРИПТЫ КОНЕЦ -->
 </body>

@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Tenor+Sans&display=swap" rel="stylesheet">
 	<!-- ШРИФТЫ ВРЕМЕННЫЕ КОНЕЦ -->
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -285,7 +286,7 @@
 			<div><img src="images/mobile/account-icon.svg" alt="account"></div>
 		</div>	
 	</div>
-	<section class="first-slider">
+	<!-- <section class="first-slider">
 		<div class="first-slider__slide">
 			<div class="container">
 				<h1 class="first-slider__title">
@@ -308,7 +309,41 @@
 				</div>
 			</div>	
 		</div>
+	</section> -->
+
+
+	<section class="swiper first-slider">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide first-slider__slide">
+	    	<div class="container">
+				<h1 class="first-slider__title">
+					Еженедельная скидка 5% на товары<br>по спецпредложениям
+				</h1>
+				<div class="first-slider__cta">
+					<a href="#" class="first-slider__catalog">Перейти в каталог</a>
+					<a href="#" class="first-slider__sales">Акции и скидки</a>
+				</div>
+			</div>	
+	    </div>
+	    <div class="swiper-slide first-slider__slide">
+	    	<div class="container">
+				<h1 class="first-slider__title">
+					Еженедельная скидка 5% на товары<br>по спецпредложениям
+				</h1>
+				<div class="first-slider__cta">
+					<a href="#" class="first-slider__catalog">Перейти в каталог</a>
+					<a href="#" class="first-slider__sales">Акции и скидки</a>
+				</div>
+			</div>	
+	    </div>
+	  </div>
+	  <div class="first-slider__nav">
+		  <div class="first-slider-prev"></div>
+		  <div class="first-slider-next"></div>
+	  </div>
 	</section>
+
+
 	<section class="popular">
 		<h2 class="title popular__title">Популярные категории</h2>
 		<div class="popular__services">
@@ -406,137 +441,143 @@
 	<section class="new">
 		<div class="container">
 			<h2 class="title new__title">Новинки</h2>
-			<div class="new__slider">
-				<div class="new__slide">
-					<div class="new__top">
-						<img src="images/product/prod1015.webp" alt="product">
-						<div class="product__marks">
-							<div class="product__info product__info_new-mob">new</div>
-							<div class="new__top_stars top__stars">
-								<span>
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-								</span>
+			<div id="new__slider" class="swiper">
+				<div class="swiper-wrapper">
+					<div class="new__slide swiper-slide">
+						<div class="new__top">
+							<img src="images/product/prod1015.webp" alt="product">
+							<div class="product__marks">
+								<div class="product__info product__info_new-mob">new</div>
+								<div class="new__top_stars top__stars">
+									<span>
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+									</span>
+								</div>
+							</div>	
+						</div>
+						<div class="new__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
 							</div>
-						</div>	
+						</div>
 					</div>
-					<div class="new__bottom">
-						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
-						<div class="new__bottom_row">
-							<span>1200 ₽</span>
-							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
-							</a>
+					<div class="new__slide swiper-slide">
+						<div class="new__top">
+							<img src="images/product/product-image-2.jpg" alt="product">
+							<div class="product__marks">
+								<div class="product__info product__info_new-mob">new</div>
+								<div class="new__top_stars top__stars">
+									<span>
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+									</span>
+								</div>
+							</div>	
+						</div>
+						<div class="new__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="new__slide swiper-slide">
+						<div class="new__top">
+							<img src="images/product/product-image-3.jpg" alt="product">
+							<div class="product__marks">
+								<div class="product__info product__info_new-mob">new</div>
+								<div class="new__top_stars top__stars">
+									<span>
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+									</span>
+								</div>
+							</div>	
+						</div>
+						<div class="new__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="new__slide swiper-slide">
+						<div class="new__top">
+							<img src="images/product/product-image-1.jpg" alt="product">
+							<div class="product__marks">
+								<div class="product__info product__info_new-mob">new</div>
+								<div class="new__top_stars top__stars">
+									<span>
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+									</span>
+								</div>
+							</div>	
+						</div>
+						<div class="new__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="new__slide swiper-slide">
+						<div class="new__top">
+							<img src="images/product/product-image-2.jpg" alt="product">
+							<div class="product__marks">
+								<div class="product__info product__info_new-mob">new</div>
+								<div class="new__top_stars top__stars">
+									<span>
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+										<img src="images/product/star-icon.svg" alt="star">
+									</span>
+								</div>
+							</div>	
+						</div>
+						<div class="new__bottom">
+							<a href="#" class="new__bottom_title">Сыворотка для лица</a>
+							<div class="new__bottom_row">
+								<span>1200 ₽</span>
+								<a href="#">
+									<img src="images/header/basket-icon.svg" alt="basket">
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="new__slide">
-					<div class="new__top">
-						<img src="images/product/product-image-2.jpg" alt="product">
-						<div class="product__marks">
-							<div class="product__info product__info_new-mob">new</div>
-							<div class="new__top_stars top__stars">
-								<span>
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-								</span>
-							</div>
-						</div>	
-					</div>
-					<div class="new__bottom">
-						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
-						<div class="new__bottom_row">
-							<span>1200 ₽</span>
-							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="new__slide">
-					<div class="new__top">
-						<img src="images/product/product-image-3.jpg" alt="product">
-						<div class="product__marks">
-							<div class="product__info product__info_new-mob">new</div>
-							<div class="new__top_stars top__stars">
-								<span>
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-								</span>
-							</div>
-						</div>	
-					</div>
-					<div class="new__bottom">
-						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
-						<div class="new__bottom_row">
-							<span>1200 ₽</span>
-							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="new__slide">
-					<div class="new__top">
-						<img src="images/product/product-image-1.jpg" alt="product">
-						<div class="product__marks">
-							<div class="product__info product__info_new-mob">new</div>
-							<div class="new__top_stars top__stars">
-								<span>
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-								</span>
-							</div>
-						</div>	
-					</div>
-					<div class="new__bottom">
-						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
-						<div class="new__bottom_row">
-							<span>1200 ₽</span>
-							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="new__slide">
-					<div class="new__top">
-						<img src="images/product/product-image-2.jpg" alt="product">
-						<div class="product__marks">
-							<div class="product__info product__info_new-mob">new</div>
-							<div class="new__top_stars top__stars">
-								<span>
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-									<img src="images/product/star-icon.svg" alt="star">
-								</span>
-							</div>
-						</div>	
-					</div>
-					<div class="new__bottom">
-						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
-						<div class="new__bottom_row">
-							<span>1200 ₽</span>
-							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
-							</a>
-						</div>
-					</div>
-				</div>
+				<div class="new-slider__nav slider-nav">
+		  			<div class="new-slider-prev slider-prev-arrow"></div>
+		  			<div class="new-slider-next slider-next-arrow"></div>
+	  			</div>
 			</div>
 		</div>
 	</section>
@@ -563,7 +604,7 @@
 							<div class="new__bottom_row">
 								<span>1200 ₽</span>
 								<a href="#">
-									<img src="images/header/basket-icon.png" alt="basket">
+									<img src="images/header/basket-icon.svg" alt="basket">
 								</a>
 							</div>
 						</div>
@@ -586,7 +627,7 @@
 							<div class="new__bottom_row">
 								<span>1200 ₽</span>
 								<a href="#">
-									<img src="images/header/basket-icon.png" alt="basket">
+									<img src="images/header/basket-icon.svg" alt="basket">
 								</a>
 							</div>
 						</div>
@@ -609,7 +650,7 @@
 							<div class="new__bottom_row">
 								<span>1200 ₽</span>
 								<a href="#">
-									<img src="images/header/basket-icon.png" alt="basket">
+									<img src="images/header/basket-icon.svg" alt="basket">
 								</a>
 							</div>
 						</div>
@@ -632,7 +673,7 @@
 							<div class="new__bottom_row">
 								<span>1200 ₽</span>
 								<a href="#">
-									<img src="images/header/basket-icon.png" alt="basket">
+									<img src="images/header/basket-icon.svg" alt="basket">
 								</a>
 							</div>
 						</div>
@@ -655,7 +696,7 @@
 							<div class="new__bottom_row">
 								<span>1200 ₽</span>
 								<a href="#">
-									<img src="images/header/basket-icon.png" alt="basket">
+									<img src="images/header/basket-icon.svg" alt="basket">
 								</a>
 							</div>
 						</div>
@@ -689,7 +730,7 @@
 						<div class="new__bottom_row">
 							<span>1200 ₽</span>
 							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
+								<img src="images/header/basket-icon.svg" alt="basket">
 							</a>
 						</div>
 					</div>
@@ -715,7 +756,7 @@
 						<div class="new__bottom_row">
 							<span>1200 ₽</span>
 							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
+								<img src="images/header/basket-icon.svg" alt="basket">
 							</a>
 						</div>
 					</div>
@@ -741,7 +782,7 @@
 						<div class="new__bottom_row">
 							<span>1200 ₽</span>
 							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
+								<img src="images/header/basket-icon.svg" alt="basket">
 							</a>
 						</div>
 					</div>
@@ -767,7 +808,7 @@
 						<div class="new__bottom_row">
 							<span>1200 ₽</span>
 							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
+								<img src="images/header/basket-icon.svg" alt="basket">
 							</a>
 						</div>
 					</div>
@@ -793,7 +834,7 @@
 						<div class="new__bottom_row">
 							<span>1200 ₽</span>
 							<a href="#">
-								<img src="images/header/basket-icon.png" alt="basket">
+								<img src="images/header/basket-icon.svg" alt="basket">
 							</a>
 						</div>
 					</div>
@@ -955,6 +996,7 @@
 	<script src="js/jquery.ui.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 	<!-- СКРИПТЫ КОНЕЦ -->
 </body>

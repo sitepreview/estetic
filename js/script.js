@@ -1,11 +1,11 @@
 // JQuery
 $(document).ready(function(){
-  $('.first-slider').slick({
+ /* $('.first-slider').slick({
   	//autoplay: true,
     autoplaySpeed: 4000
-  });
+  });*/
 
-  $('.new__slider').slick({
+  /*$('.new__slider').slick({
   	//autoplay: true,
     autoplaySpeed: 4000,
     slidesToShow: 4,
@@ -26,7 +26,7 @@ $(document).ready(function(){
         }
       }
     ]
-  });
+  });*/
 
   $('.week__slider').slick({
   	//autoplay: true,
@@ -167,6 +167,63 @@ $(document).ready(function(){
 
 // native JS
 document.addEventListener('DOMContentLoaded', function(){
+  let swiperCheck = document.querySelector(".swiper");
+  if (swiperCheck != null) {
+    const firstSlider = new Swiper('.first-slider', {
+      // Optional parameters
+      loop: true,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.first-slider-next',
+        prevEl: '.first-slider-prev',
+      },
+    });
+
+    const newSlider = new Swiper('#new__slider', {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 21,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.new-slider-next',
+        prevEl: '.new-slider-prev',
+      },
+    });
+
+    const recommendSlider = new Swiper('#recommend__slider', {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 18,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.recommend-slider-next',
+        prevEl: '.recommend-slider-prev',
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 9,
+        },
+
+        770: {
+          slidesPerView: 3,
+          spaceBetween: 18,
+        },
+
+        1100: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  }
+
+  
   let catTabs = document.querySelector(".catalog-tabs");
   if (catTabs != null) {
     const catTabsBtn   = document.querySelectorAll(".catalog-tabs__btn");
