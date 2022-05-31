@@ -316,9 +316,9 @@
 								<div class="shopping-cart__price_old">325 ₽</div>
 							</div>
 							<div class="shopping-cart__quantity">
-								<input type="button" id="buttonCountMinus" value="-">
-								<div id="buttonCountNumber">1</div>
-								<input type="button" id="buttonCountPlus" value="+">
+								<button class="counter__btn" data-direction="minus">-</button>
+								<input type="text" value="1" class="counter__value" readonly>
+								<button class="counter__btn" data-direction="plus">+</button>
 							</div>
 							<div class="shopping-cart__amount">312 ₽</div>
 						</div>	
@@ -342,9 +342,9 @@
 								<!-- <div class="shopping-cart__price_old">325 ₽</div> -->
 							</div>
 							<div class="shopping-cart__quantity shopping-cart__quantity_none">
-								<input type="button" id="buttonCountMinus" value="-">
-								<div id="buttonCountNumber">1</div>
-								<input type="button" id="buttonCountPlus" value="+">
+								<button class="counter__btn" data-direction="minus">-</button>
+								<input type="text" value="1" class="counter__value" readonly>
+								<button class="counter__btn" data-direction="plus">+</button>
 							</div>
 							<div class="shopping-cart__amount">312 ₽</div>
 						</div>	
@@ -361,7 +361,7 @@
 						<div>Подытог: 1149 ₽</div>
 						<div class="shopping-cart__buy_margin">Скидка: 13 ₽</div>
 						<div class="shopping-cart__total">Итого: 1136 ₽</div>
-						<input type="submit" value="Быстрый заказ" class="cart-button">
+						<input type="submit" value="Быстрый заказ" class="cart-button" id="quick-order-btn">
 					</div>
 				</div>
 			</div>
@@ -377,7 +377,7 @@
 						<div class="shopping-application__inputs">
 							<input type="text" placeholder="Имя*" class="shopping-application-input">
 							<input type="tel" placeholder="Телефон*" class="shopping-application-input">
-							<div>
+							<div class="quick-order">
 								<select class="shopping-application-input">
 									<option value="" selected="selected">Доставка</option>
 									<option value="">Текст 1</option>
@@ -386,9 +386,9 @@
 							</div>	
 						</div>
 						<div class="shopping-application__inputs">
-							<input type="text" placeholder="Фамилия*" class="shopping-application-input">
+							<input type="text" placeholder="Фамилия*" class="shopping-application-input quick-order">
 							<input type="email" placeholder="E-mail*" class="shopping-application-input">
-							<div>
+							<div class="quick-order">
 								<select class="shopping-application-input">
 									<option value="" selected="selected">Выбрать город</option>
 									<option value="">Текст 1</option>
@@ -396,8 +396,16 @@
 								</select>
 							</div>	
 						</div>
+					</div>
+					<div class="shopping-application__inputs quick-order">
+						<select class="shopping-application-input payment-type">
+							<option value="" selected="selected">Укажите тип оплаты</option>
+							<option value="">Наличные</option>
+							<option value="">Банковской картой в офисе</option>
+							<option value="">Безналичный расчет</option>
+						</select>
 					</div>	
-					<div class="shopping-application__inputs">
+					<div class="shopping-application__inputs quick-order">
 						<textarea type="text" placeholder="Комментарий к заказу" class="shopping-application-input"></textarea>
 					</div>
 				</div>

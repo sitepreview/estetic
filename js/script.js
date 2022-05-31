@@ -337,6 +337,48 @@ document.addEventListener('DOMContentLoaded', function(){
     catalogFilterBtnMobClose.addEventListener('click', () => {
       catalogFilterMob.classList.remove('active');
     })
+
+
+    const counter = function () {
+      const btns = document.querySelectorAll('.counter__btn');
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          const direction = this.dataset.direction;
+          const inp = this.parentElement.querySelector('.counter__value');
+          const currentValue = +inp.value;
+          let newValue;
+
+          if (direction === 'plus') {
+            newValue = currentValue + 1;
+          } else {
+            newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+          }
+
+          if (newValue > 99) {
+            newValue = 99;
+          }
+
+          if (newValue < 1) {
+            newValue = 1;
+          }
+
+          inp.value = newValue;
+        })
+      })
+
+    }
+
+    counter();
+
+
+    const baskets = document.querySelectorAll('.product__basket');
+      baskets.forEach(basket => {
+        basket.addEventListener('click', function () {
+          let change = basket.parentElement;
+          change.classList.add('replace');
+        })
+      })
   }
 
 
@@ -406,6 +448,46 @@ document.addEventListener('DOMContentLoaded', function(){
             parent.classList.add('product-card__accordion_item--active');
         }
       }))
+
+
+      const counter = function () {
+        const btns = document.querySelectorAll('.counter__btn');
+
+        btns.forEach(btn => {
+          btn.addEventListener('click', function () {
+            const direction = this.dataset.direction;
+            const inp = this.parentElement.querySelector('.counter__value');
+            const currentValue = +inp.value;
+            let newValue;
+
+            if (direction === 'plus') {
+              newValue = currentValue + 1;
+            } else {
+              newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+            }
+
+            if (newValue > 99) {
+              newValue = 99;
+            }
+
+            if (newValue < 1) {
+              newValue = 1;
+            }
+
+            inp.value = newValue;
+          })
+        })
+
+      }
+
+      counter();
+
+
+       const basketBtn = document.getElementById('basket-btn');
+        basketBtn.addEventListener('click', function () {
+          let change = basketBtn.parentElement;
+          change.classList.add('replace');
+        })
   }
 
 
@@ -480,5 +562,49 @@ document.addEventListener('DOMContentLoaded', function(){
           n.classList.toggle('active', i === this.selectedIndex);
         });
       });
+  }
+
+
+  let cartCheck = document.querySelector(".shopping-cart");
+  if (cartCheck != null) {
+    const quickOrderBtn = document.getElementById("quick-order-btn");
+    console.log(quickOrderBtn);
+    quickOrderBtn.addEventListener("click", function() {
+      const quickOrderCont = document.querySelector(".shopping-application__container");
+      quickOrderCont.classList.add('quick-order__container')
+    })
+
+
+    const counter = function () {
+      const btns = document.querySelectorAll('.counter__btn');
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          const direction = this.dataset.direction;
+          const inp = this.parentElement.querySelector('.counter__value');
+          const currentValue = +inp.value;
+          let newValue;
+
+          if (direction === 'plus') {
+            newValue = currentValue + 1;
+          } else {
+            newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+          }
+
+          if (newValue > 99) {
+            newValue = 99;
+          }
+
+          if (newValue < 1) {
+            newValue = 1;
+          }
+
+          inp.value = newValue;
+        })
+      })
+
+    }
+
+    counter();
   }
 });

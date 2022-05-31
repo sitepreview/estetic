@@ -320,7 +320,7 @@
 							<img src="images/product/star-icon.svg" alt="star">
 							<img src="images/product/star-icon.svg" alt="star">
 						</div>
-						<div>Артикул: 162237</div>
+						<div class="product-card__code">Артикул: 162237</div>
 						<div>Тоник для лица Увлажняющий, 150 мл - Plazan (Россия)</div>
 						<div>
 							<span class="product-card__price_new">312 ₽</span>
@@ -328,7 +328,12 @@
 						</div>
 						<div>Возможен самовывоз</div>
 						<div>
-							<button>В корзину</button>
+							<button id="basket-btn">В корзину</button>
+							<div class="cart__counter">
+								<button class="counter__btn" data-direction="minus">-</button>
+								<input type="text" value="1" class="counter__value" readonly>
+								<button class="counter__btn" data-direction="plus">+</button>
+							</div>
 							<span class="product-card__like"></span>
 						</div>
 						<div>
