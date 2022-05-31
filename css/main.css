@@ -1620,6 +1620,7 @@ footer nav ul li:last-child {
 
 .product__basket img {
   width: 30px;
+  cursor: pointer;
 }
 
 .product__login {
