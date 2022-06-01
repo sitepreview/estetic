@@ -2013,10 +2013,7 @@ section .account__title {
 .account__content {
   display: flex;
   padding-left: 46px;
-}
-
-.account__buttons {
-  margin-right: 54px;
+  gap: 54px;
 }
 
 .account__button {
@@ -3535,6 +3532,194 @@ section.recommend {
   margin: 10px 16px 0 0;
 }
 
+section .sale__title {
+  margin: 47px 0 64px 0;
+}
+
+.sale__banners {
+  display: flex;
+}
+
+.sale-banner {
+  width: 50%;
+  height: 278px;
+}
+
+.sale-banner:first-child {
+  /*background: url(../images/sale/banner-bg-1.jpg) no-repeat center top / cover;*/
+  background-color: #55721E;
+}
+
+.sale-banner:last-child {
+  /*background: url(../images/sale/banner-bg-2.jpg) no-repeat center top / cover;*/
+  background-color: #9EAC31;
+}
+
+.sale-banner__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale-banner__text {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  padding: 55px 0 0 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+}
+
+.sale-banner__text span {
+  font-size: 32px;
+}
+
+.sale-banner__text div {
+  font-size: 50px;
+}
+
+.sale-banner__percent {
+  font-family: 'Lato', sans-serif;
+  font-size: 340px;
+  line-height: 285px;
+  color: rgba(255, 255, 255, 0.1);
+  margin-right: -17px;
+}
+
+section.sale-card {
+  margin: 180px 0 150px 0;
+}
+
+.sale-card__inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sale-card__text {
+  padding-top: 25px;
+}
+
+.sale-card__title, .sale-card__text ul span {
+  font-size: 32px;
+}
+
+.sale-card__text ul {
+  font-size: 24px;
+  max-width: 845px;
+  margin: 42px 0 0 0;
+}
+
+.sale-card__text ul li {
+  position: relative;
+}
+
+.sale-card__text ul li:nth-child(2) {
+  margin: 25px 0;
+}
+
+.sale-card__text ul li:before {
+  content: url(../images/company/list-style-check-mark.svg);
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: -38px;
+  top: 7px;
+}
+
+.special-price p {
+  font-size: 24px;
+  text-align: center;
+  max-width: 898px;
+  margin: 0 auto;
+}
+
+section.wholesale {
+  margin: 154px 0 168px 0;
+}
+
+section .wholesale__title {
+  margin-bottom: 22px;
+}
+
+.wholesale__subtitle {
+  font-size: 20px;
+  color: #7C7C7C;
+  text-align: center;
+  max-width: 603px;
+  margin: 0 auto;
+}
+
+.wholesale__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  margin-top: 69px;
+}
+
+.wholesale__table table {
+  border: 1px solid rgba(85, 114, 30, 1);
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 22px;
+}
+
+.wholesale__table tr {
+  font-size: 20px;
+  height: 62px;
+  border-bottom: 1px solid rgba(170, 184, 142, 1);
+}
+
+.wholesale__table tr:first-child {
+  font-size: 24px;
+}
+
+.wholesale__table tr:nth-child(2) {
+  height: 52px;
+}
+
+.wholesale__table tr:last-child {
+  border-bottom: none;
+}
+
+.wholesale__table td {
+  border-right: 1px solid rgba(170, 184, 142, 1);
+}
+
+.wholesale__table tr td:last-child {
+  border-right: none;
+}
+
+.wholesale__table .tgr {
+  color: #fff;
+  background-color: #9EAC31;
+}
+
+.wholesale__table .twh {
+  background-color: #F5F3EF;
+  height: 88px;
+  border-bottom: 1px solid rgba(170, 184, 142, 1);
+}
+
+.wholesale__container span {
+  font-size: 18px;
+  color: #7C7C7C;
+}
+
+.wholesale__notes {
+  margin-top: 64px;
+  font-size: 22px;
+}
+
+.wholesale__notes p:first-child {
+  margin-bottom: 34px;
+}
+
+.confirmation__text {
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 0 50px 0;
+}
+
 /* МЕДИА ЗАПРОСЫ НАЧАЛО */
 
 @media (max-width: 1923px) {
@@ -3709,13 +3894,17 @@ section.recommend {
     margin: 0;
   }
 
+  .account__inner {
+    height: 880px;
+  }
+
   .account__left {
-    padding-right: 100px;
+    padding-right: 80px;
     padding-top: 156px;
   }
 
   .account__right {
-    padding-left: 25px;
+    padding-left: 60px;
   }
 
   .account__content {
@@ -3724,7 +3913,11 @@ section.recommend {
   }
 
   .account__buttons {
-    margin-right: 35px;
+    width: 50%;
+  }
+
+  .account__card {
+    width: 50%;
   }
 
   .account__button_trigger {
@@ -4507,6 +4700,12 @@ section.recommend {
   .recommend-slide .popular-slide__top {
     height: 330px;
   }
+
+  .confirmation__text {
+    font-size: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -4557,69 +4756,35 @@ section.recommend {
   }
 
   .new__top, .week__top {
-    height: 300px; /*350*/
+    height: 300px;
   }
 
   .contacts__map .container {
     padding-right: 0;
   }
-}
 
-@media (max-width: 1400px) {
-  .account__item:nth-child(6) {
-    flex-direction: column;
-    gap: 7px;
+  .account__content {
+    gap: 25px;
   }
 
-  .account__data {
-    padding: 36px 37px 44px 37px;
-  }
-
-  section .account__title {
-    margin-bottom: 40px;
-  }
-
-  .account__left {
-    padding-top: 176px;
-  }
-
-  .account__left {
-    padding-left: 60px;
-  }
-
-  .account__data {
-    font-size: 18px;
-  }
-
-  .account__item a {
-    font-size: 14px;
+  .account__card {
+    width: 60%;
   }
 
   .account__button_trigger {
-    font-size: 22px;
-  }
-
-  .account__button_sale {
     font-size: 18px;
   }
 
-  .account__button_date {
-    font-size: 14px;
+  .account__right {
+    padding-left: 40px;
   }
 
-  .account__button_content .account__button_number a, .account__button_order, .account__button_number {
-    font-size: 16px;
+  .account__left {
+    padding-right: 60px;
   }
+}
 
-  .account__button--active .account__button_content {
-    padding: 0 19px 44px 28px;
-  }
-
-  .about__right div {
-    margin: 0;
-    font-size: 21px;
-  }
-
+@media (max-width: 1400px) {
   .footer__inner .footer__column:last-child {
     margin-right: 0;
   }
@@ -5491,6 +5656,84 @@ section.recommend {
     height: 75px;
     background-size: 50%;
   }
+
+  .account__inner {
+    height: 620px;
+  }
+
+  .account__right {
+    padding: 30px 70px 0 30px;
+  }
+
+  .account__left {
+    padding: 104px 60px 0 75px;
+  }
+
+  .account__button_trigger {
+    font-size: 16px;
+    height: 52px;
+    margin-bottom: 12px;
+  }
+
+  .account__card img {
+    height: 180px;
+  }
+
+  .account__data {
+    padding: 25px 22px 30px 29px;
+    min-width: 340px;
+  }
+
+  .account__name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .account__item {
+    font-size: 15px;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .account__item a {
+    font-size: 14px;
+  }
+
+  .account__item:nth-child(6) {
+    margin-bottom: 15px;
+  }
+
+  .account__item:nth-child(7) {
+    margin-bottom: 5px;
+  }
+
+  .account__button_order, .account__button_sale {
+    line-height: normal;
+  }
+
+  .account__button_sale {
+    margin: 0px 0 15px 0;
+  }
+
+  .account__button_order-2 {
+    margin: 15px 0 20px;
+  }
+
+  .account__button_sale, .account__button_number, .account__button_content {
+    font-size: 14px;
+  }
+
+  .account__button_order .account__button_number a {
+    font-size: 12px;
+  }
+
+  .account__button_date, .account__button_content a {
+    font-size: 10px;
+  }
+
+  .confirmation__text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -5888,9 +6131,19 @@ section.recommend {
     padding: 35px 0 47px 0;
   }
 
+  .account__buttons, .account__card {
+    width: 100%;
+  }
+
+  .account__card img {
+    height: auto;
+  }
+
   .account__data {
     width: 91%;
     margin: 0 auto;
+    min-width: 320px;
+    padding: 30px;
   }
 
   .account__right {
@@ -5904,10 +6157,26 @@ section.recommend {
     max-width: 91%;
     margin: 0 auto;
     align-items: center;
+    gap: 14px;
   }
 
-  .account__buttons {
-    margin-right: 0;
+  .account__name {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+
+  .account__item {
+    font-size: 18px;
+  }
+
+  .account__item:nth-child(6) {
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 28px;
+  }
+
+  .account__item:nth-child(7) {
+    margin-bottom: 16px;
   }
 
   .account__button_trigger {
@@ -5916,8 +6185,25 @@ section.recommend {
     height: 54px;
   }
 
-  .account__card {
-    margin-top: 14px;
+  .account__button_sale {
+    font-size: 18px;
+    margin: 10px 0 24px 0;
+  }
+
+  .account__button_order {
+    line-height: 28px;
+  }
+
+  .account__button_order, .account__button_number, .account__button_order .account__button_number a {
+    font-size: 16px;
+  }
+
+  .account__button_date, .account__button_content a {
+    font-size: 14px;
+  }
+
+  .account__button_order-2 {
+    margin: 15px 0 30px;
   }
 
   section.first-slider, section.mailing {
@@ -6967,6 +7253,10 @@ section.recommend {
 
   .recommend-slider-next {
     right: 32%;
+  }
+
+  .confirmation__text {
+    font-size: 16px;
   }
 }
 
