@@ -276,7 +276,7 @@
 					<span></span>
 				</div>
 				<div class="header-mob__logo"><a href="index.html"><img src="images/mobile/logo-mob.svg" alt="logo"></a></div>
-				<div class="header-mob__search"><img src="images/mobile/search-icon.svg" alt="search"></div>
+				<div class="header-mob__search_btn"><img src="images/mobile/search-icon.svg" alt="search"></div>
 			</div>
 		</div>	
 		<div class="header-mob__row">
@@ -284,33 +284,52 @@
 			<div><img src="images/mobile/like-icon.svg" alt="liked"></div>
 			<div><img src="images/mobile/basket-icon.svg" alt="basket"></div>
 			<div><img src="images/mobile/account-icon.svg" alt="account"></div>
-		</div>	
+		</div>
+		<div class="header-mob__search">
+			<div class="header__search">
+				<input type="search" placeholder="Поиск...">
+				<div class="search__button">
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- <section class="first-slider">
-		<div class="first-slider__slide">
-			<div class="container">
-				<h1 class="first-slider__title">
-					Еженедельная скидка 5% на товары<br>по спецпредложениям
-				</h1>
-				<div class="first-slider__cta">
-					<a href="catalog.html" class="first-slider__catalog">Перейти в каталог</a>
-					<a href="#" class="first-slider__sales">Акции и скидки</a>
-				</div>
-			</div>	
-		</div>
-		<div class="first-slider__slide">
-			<div class="container">
-				<h1 class="first-slider__title">
-					Еженедельная скидка 5% на товары<br>по спецпредложениям
-				</h1>
-				<div class="first-slider__cta">
-					<a href="#" class="first-slider__catalog">Перейти в каталог</a>
-					<a href="#" class="first-slider__sales">Акции и скидки</a>
-				</div>
-			</div>	
-		</div>
-	</section> -->
 
+	<nav class="mob">
+		<div class="mob-accordion">
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Акции этой недели</span>
+					<span><img src="images/mobile/accordion-arrow.svg" alt="arrow"></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Новинки</span>
+					<span><img src="images/mobile/accordion-arrow.svg" alt="arrow"></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 
 	<section class="swiper first-slider">
 	  <div class="swiper-wrapper">
@@ -342,8 +361,6 @@
 		  <div class="first-slider-next"></div>
 	  </div>
 	</section>
-
-
 	<section class="popular">
 		<h2 class="title popular__title">Популярные категории</h2>
 		<div class="popular__services">
@@ -922,70 +939,86 @@
 	<footer>
 		<div class="container">
 			<div class="footer__inner">
-				<div class="footer__column">
-					<nav>
-						<ul>
-							<li><a href="company.html">О компании</li></a>
-							<li><a href="#">Помощь покупателю</li></a>
-							<li><a href="#">Лицензия</li></a>
-							<li><a href="#">Карта сайта</li></a>
-							<li><a href="contacts.html">Контакты</li></a>
-							<li><a href="#">Политика компании</li></a>
-						</ul>
-					</nav>
+				<div class="footer__group footer__group-1">
+					<div class="footer__column">
+						<nav>
+							<ul>
+								<li><a href="company.html">О компании</li></a>
+								<li><a href="#">Помощь покупателю</li></a>
+								<li><a href="#">Лицензия</li></a>
+								<li><a href="#">Карта сайта</li></a>
+								<li><a href="contacts.html">Контакты</li></a>
+								<li><a href="#">Политика компании</li></a>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<nav>
+							<ul>
+								<li><a href="#">Обучение</li></a>
+								<li><a href="#">Скачать прайс</li></a>
+								<li><a href="#">Доставка и самовывоз</li></a>
+								<li><a href="#">Обмен и возврат</li></a>
+								<li><a href="#">Блог</li></a>
+							</ul>
+						</nav>
+					</div>
 				</div>
-				<div class="footer__column">
-					<nav>
-						<ul>
-							<li><a href="#">Обучение</li></a>
-							<li><a href="#">Скачать прайс</li></a>
-							<li><a href="#">Доставка и самовывоз</li></a>
-							<li><a href="#">Обмен и возврат</li></a>
-							<li><a href="#">Блог</li></a>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer__column">
-					<div class="footer__phone"><span>Телефон:</span> +7 (495) 640-58-89</div>
-					<div class="footer__mail"><span>Email:</span> info@esteticshop</div>
-					<div class="footer__socials">
-						<span>Социальные сети</span>
+				<div class="footer__group footer__group-2">
+					<div class="footer__column">
 						<div>
-							<a href="#"><img src="images/socials/facebook-icon.png" alt="social"></a>
-							<a href="#"><img src="images/socials/instagram-icon.png" alt="social"></a>
-							<a href="#"><img src="images/socials/vk-icon.png" alt="social"></a>
-							<a href="#"><img src="images/socials/odnoklassniki-icon.png" alt="social"></a>
+							<div class="footer__phone"><span>Телефон:</span> +7 (495) 640-58-89</div>
+							<div class="footer__mail"><span>Email:</span> info@esteticshop</div>
+							<div class="footer__socials">
+								<span>Социальные сети</span>
+								<div>
+									<a href="#"><img src="images/socials/facebook-icon.png" alt="social"></a>
+									<a href="#"><img src="images/socials/instagram-icon.png" alt="social"></a>
+									<a href="#"><img src="images/socials/vk-icon.png" alt="social"></a>
+									<a href="#"><img src="images/socials/odnoklassniki-icon.png" alt="social"></a>
+								</div>
+							</div>
+						</div>	
+						<div class="footer__column_mob">
+						<span>Напишите нам:</span>
+							<div class="footer__row footer__row-1">
+								<a href="#"><img src="images/socials/whatsapp-icon.png" alt="social"></a>
+								<a href="#"><img src="images/socials/telegram-icon.png" alt="social"></a>
+								<a href="#"><img src="images/socials/viber-icon.png" alt="social"></a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="footer__column">
-					<span>Напишите нам:</span>
-					<div class="footer__row footer__row-1">
-						<a href="#"><img src="images/socials/whatsapp-icon.png" alt="social"></a>
-						<a href="#"><img src="images/socials/telegram-icon.png" alt="social"></a>
-						<a href="#"><img src="images/socials/viber-icon.png" alt="social"></a>
+				</div>	
+				<div class="footer__group footer__group-3">
+					<div class="footer__column">
+						<span>Напишите нам:</span>
+						<div class="footer__row footer__row-1">
+							<a href="#"><img src="images/socials/whatsapp-icon.png" alt="social"></a>
+							<a href="#"><img src="images/socials/telegram-icon.png" alt="social"></a>
+							<a href="#"><img src="images/socials/viber-icon.png" alt="social"></a>
+						</div>
+						<div class="footer__row footer__row-2">
+							<a href="#"><img src="images/socials/mastercard-icon.png" alt="payment"></a>
+							<a href="#"><img src="images/socials/visa-icon.png" alt="payment"></a>
+						</div>
+						<div class="footer__row footer__row-3">
+							<a href="#"><img src="images/socials/sbp-icon.png" alt="payment"></a>
+							<a href="#"><img src="images/socials/mir-icon.png" alt="payment"></a>
+						</div>
+						<div class="footer__row footer__row-4">
+							<a href="#"><img src="images/socials/yamarket-icon.png" alt="market"></a>
+						</div>
 					</div>
-					<div class="footer__row footer__row-2">
-						<a href="#"><img src="images/socials/mastercard-icon.png" alt="payment"></a>
-						<a href="#"><img src="images/socials/visa-icon.png" alt="payment"></a>
+					<div class="footer__column">
+						<span>Наше приложение:</span>
+						<div class="footer__gplay">
+							<a href="#"><img src="images/socials/gplay-icon.png" alt="app"></a>
+						</div>
+						<div>
+							<a href="#"><img src="images/socials/astore-icon.png" alt="app"></a>
+						</div>
 					</div>
-					<div class="footer__row footer__row-3">
-						<a href="#"><img src="images/socials/sbp-icon.png" alt="payment"></a>
-						<a href="#"><img src="images/socials/mir-icon.png" alt="payment"></a>
-					</div>
-					<div class="footer__row footer__row-4">
-						<a href="#"><img src="images/socials/yamarket-icon.png" alt="market"></a>
-					</div>
-				</div>
-				<div class="footer__column">
-					<span>Наше приложение:</span>
-					<div class="footer__gplay">
-						<a href="#"><img src="images/socials/gplay-icon.png" alt="app"></a>
-					</div>
-					<div>
-						<a href="#"><img src="images/socials/astore-icon.png" alt="app"></a>
-					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
 		<div class="footer__bottom"></div>

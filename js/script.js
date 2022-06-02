@@ -280,6 +280,32 @@ document.addEventListener('DOMContentLoaded', function(){
       headerCatOverlay.classList.toggle('active');
       bodyOverflow.classList.toggle('active');
     })
+
+
+
+    const mobSearchBtn = document.querySelector('.header-mob__search_btn');
+    const mobSearch = document.querySelector('.header-mob__search');
+
+    mobSearchBtn.addEventListener("click", function() {
+      mobSearch.classList.toggle('active');
+    })
+
+
+    document.querySelectorAll('.mob-accordion__trigger').forEach((item) =>
+      item.addEventListener('click', () => {
+        const parent = item.parentNode;
+
+        if (parent.classList.contains('mob-accordion__item-active')) {
+          parent.classList.remove('mob-accordion__item-active');
+        }
+        else {
+          document
+            .querySelectorAll('.mob-accordion__item')
+            .forEach((child) => child.classList.remove('mob-accordion__item-active'))
+
+            parent.classList.add('mob-accordion__item-active');
+        }
+      }))
   }
 
 
@@ -339,8 +365,8 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 
 
-    const counter = function () {
-      const btns = document.querySelectorAll('.counter__btn');
+    const counter = function () { 
+      const btns = document.querySelectorAll('.counter__btn'); //а это каталог
 
       btns.forEach(btn => {
         btn.addEventListener('click', function () {
@@ -364,6 +390,7 @@ document.addEventListener('DOMContentLoaded', function(){
           }
 
           inp.value = newValue;
+          if(updateCart) updateCart(newValue,btn);
         })
       })
 
@@ -403,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
   let productCardCheck = document.querySelector(".product-card__tabs");
-  if (productCardCheck != null) {
+  if (productCardCheck != null) { //это карточка товара
     const prodCardTabsBtn   = document.querySelectorAll(".product-card__tabs_btn");
     const prodCardTabsItems = document.querySelectorAll(".product-card__tabs_item");
 
@@ -475,6 +502,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }
 
             inp.value = newValue;
+            if(updateCart) updateCart(newValue);
           })
         })
 
@@ -566,7 +594,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
   let cartCheck = document.querySelector(".shopping-cart");
-  if (cartCheck != null) {
+  if (cartCheck != null) { //это код для корзины
     const quickOrderBtn = document.getElementById("quick-order-btn");
     console.log(quickOrderBtn);
     quickOrderBtn.addEventListener("click", function() {
@@ -600,6 +628,7 @@ document.addEventListener('DOMContentLoaded', function(){
           }
 
           inp.value = newValue;
+          if(updateCart) updateCart(newValue,btn);
         })
       })
 
