@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="body">
 	<header>
 		<div class="header__top">
 			<div class="container">
@@ -275,8 +275,10 @@
 				<div class="header-mob__burger">
 					<span></span>
 				</div>
+				<div class="header-mob__burger_back"></div>
 				<div class="header-mob__logo"><a href="index.html"><img src="images/mobile/logo-mob.svg" alt="logo"></a></div>
-				<div class="header-mob__search"><img src="images/mobile/search-icon.svg" alt="search"></div>
+				<div class="header-mob__search_btn"><img src="images/mobile/search-icon.svg" alt="search"></div>
+				<div class="header-mob__burger_close"><img src="images/mobile/burger-cross.svg" alt="cross"></div>
 			</div>
 		</div>	
 		<div class="header-mob__row">
@@ -284,8 +286,257 @@
 			<div><img src="images/mobile/like-icon.svg" alt="liked"></div>
 			<div><img src="images/mobile/basket-icon.svg" alt="basket"></div>
 			<div><img src="images/mobile/account-icon.svg" alt="account"></div>
-		</div>	
+		</div>
+		<div class="header-mob__search">
+			<div class="header__search">
+				<input type="search" placeholder="Поиск...">
+				<div class="search__button">
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<nav class="mob burger-menu">
+		<div class="mob-accordion">
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Акции этой недели</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Новинки</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Товары с ограниченным сроком годности</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Косметологическая продукция</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger">
+							<a href="#">Маски для лица и тела</a>
+							<ul>
+								<li><a href="#">Очиающие маски</a></li>
+								<li><a href="#">Альгинатные (пластифицирующие) маски</a></li>
+								<li><a href="#">Маски на основе гиалуроновой кислоты</a></li>
+								<li><a href="#">Маски для жирной и проблемной кожи</a></li>
+								<li><a href="#">Омолаживающие маски</a></li>
+								<li><a href="#">Маски для глаз и век</a></li>
+								<li><a href="#">Маски для волос</a></li>
+							</ul>
+						</li>
+						<li class="mob-accordion__sub_trigger"><a href="#">Очищающие средства</a></li>
+						<li class="mob-accordion__sub_trigger"><a href="#">Кремы для лица и тела</a></li>
+						<li class="mob-accordion__sub_trigger"><a href="#">Апператные гели</a></li>
+						<li class="mob-accordion__sub_trigger"><a href="#">Тоники</a></li>
+						<li class="mob-accordion__sub_trigger"><a href="#">Сыворотки и концетраты</a></li>
+						<li class="mob-accordion__sub_trigger"><a href="#">Расходные материалы в косметологии</a></li>
+						<li class="mob-accordion__sub_trigger"><a href="#">Косметические наборы для ухода за кожей</a></li>
+						<li class="mob-accordion__sub_trigger"><a href="#">Неинвазивная (безинъекционная) Карбокситерапия</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Мезотерапия</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Контурная пластика</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Косметический уход</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Парафинотерапия</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Депиляция</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Массаж / Spa-уход / Обертывание</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Косметика для волос</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Все для ресниц и бровей</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Инструменты и оборудование</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Одноразовая продукция</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Дизинфицирующие средства</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Учебное пособие</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mob-accordion__item">
+				<div class="mob-accordion__trigger">
+					<span>Маникюр / педикюр</span>
+					<span></span>
+				</div>
+				<div class="mob-accordion__content">
+					<ul>
+						<li class="mob-accordion__sub_trigger"><a href="#">Текст</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mob-info__title mob-only-hide">информация покупателям</div>
+		<div class="mob-menu mob-only-hide">
+			<ul>
+				<li><a href="#">Акции и скидки</a></li>
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">Обучение</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="mob-footer mob-only-hide">
+			<div class="mob__phone">Телефон: <span>+7 (495) 640-58-89</span></div>
+			<div class="mob__mail">Email: <span>info@esteticshop</span></div>
+			<div class="mob__socials">
+				<div>Мы в соц.сетях:</div>
+				<div>
+					<img src="images/socials/facebook-icon.svg" alt="social">
+					<img src="images/socials/instagram-icon.svg" alt="social">
+					<img src="images/socials/vk-icon.svg" alt="social">
+					<img src="images/socials/odnoklassniki-icon.svg" alt="social">
+				</div>
+			</div>
+			<div class="mob__socials">
+				<div>Напишите нам:</div>
+				<div>
+					<img src="images/socials/whatsapp-icon.svg" alt="social">
+					<img src="images/socials/telegram-icon.svg" alt="social">
+					<img src="images/socials/viber-icon.svg" alt="social">
+				</div>
+			</div>
+		</div>
+	</nav>
 	<section class="sale">
 		<div class="container">
 			<div class="sale__inner">
@@ -414,73 +665,92 @@
 	<footer>
 		<div class="container">
 			<div class="footer__inner">
-				<div class="footer__column">
-					<nav>
-						<ul>
-							<li><a href="company.html">О компании</li></a>
-							<li><a href="#">Помощь покупателю</li></a>
-							<li><a href="#">Лицензия</li></a>
-							<li><a href="#">Карта сайта</li></a>
-							<li><a href="contacts.html">Контакты</li></a>
-							<li><a href="#">Политика компании</li></a>
-						</ul>
-					</nav>
+				<div class="footer__group footer__group-1">
+					<div class="footer__column">
+						<nav>
+							<ul>
+								<li><a href="company.html">О компании</li></a>
+								<li><a href="#">Помощь покупателю</li></a>
+								<li><a href="#">Лицензия</li></a>
+								<li><a href="#">Карта сайта</li></a>
+								<li><a href="contacts.html">Контакты</li></a>
+								<li><a href="#">Политика компании</li></a>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<nav>
+							<ul>
+								<li><a href="#">Обучение</li></a>
+								<li><a href="#">Скачать прайс</li></a>
+								<li><a href="#">Доставка и самовывоз</li></a>
+								<li><a href="#">Обмен и возврат</li></a>
+								<li><a href="#">Блог</li></a>
+							</ul>
+						</nav>
+					</div>
 				</div>
-				<div class="footer__column">
-					<nav>
-						<ul>
-							<li><a href="#">Обучение</li></a>
-							<li><a href="#">Скачать прайс</li></a>
-							<li><a href="#">Доставка и самовывоз</li></a>
-							<li><a href="#">Обмен и возврат</li></a>
-							<li><a href="#">Блог</li></a>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer__column">
-					<div class="footer__phone"><span>Телефон:</span> +7 (495) 640-58-89</div>
-					<div class="footer__mail"><span>Email:</span> info@esteticshop</div>
-					<div class="footer__socials">
-						<span>Социальные сети</span>
+				<div class="footer__group footer__group-2">
+					<div class="footer__column">
 						<div>
-							<a href="#"><img src="images/socials/facebook-icon.png" alt="social"></a>
-							<a href="#"><img src="images/socials/instagram-icon.png" alt="social"></a>
-							<a href="#"><img src="images/socials/vk-icon.png" alt="social"></a>
-							<a href="#"><img src="images/socials/odnoklassniki-icon.png" alt="social"></a>
+							<div class="footer__phone"><span>Телефон:</span> +7 (495) 640-58-89</div>
+							<div class="footer__mail"><span>Email:</span> info@esteticshop</div>
+							<div class="footer__socials">
+								<span>Социальные сети</span>
+								<div>
+									<a href="#"><img src="images/socials/facebook-icon.png" alt="social"></a>
+									<a href="#"><img src="images/socials/instagram-icon.png" alt="social"></a>
+									<a href="#"><img src="images/socials/vk-icon.png" alt="social"></a>
+									<a href="#"><img src="images/socials/odnoklassniki-icon.png" alt="social"></a>
+								</div>
+							</div>
+						</div>	
+						<div class="footer__column_mob">
+						<span>Напишите нам:</span>
+							<div class="footer__row footer__row-1">
+								<a href="#"><img src="images/socials/whatsapp-icon.png" alt="social"></a>
+								<a href="#"><img src="images/socials/telegram-icon.png" alt="social"></a>
+								<a href="#"><img src="images/socials/viber-icon.png" alt="social"></a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="footer__column">
-					<span>Напишите нам:</span>
-					<div class="footer__row footer__row-1">
-						<a href="#"><img src="images/socials/whatsapp-icon.png" alt="social"></a>
-						<a href="#"><img src="images/socials/telegram-icon.png" alt="social"></a>
-						<a href="#"><img src="images/socials/viber-icon.png" alt="social"></a>
+				</div>	
+				<div class="footer__group footer__group-3">
+					<div class="footer__column">
+						<span>Напишите нам:</span>
+						<div class="footer__row footer__row-1">
+							<a href="#"><img src="images/socials/whatsapp-icon.png" alt="social"></a>
+							<a href="#"><img src="images/socials/telegram-icon.png" alt="social"></a>
+							<a href="#"><img src="images/socials/viber-icon.png" alt="social"></a>
+						</div>
+						<div class="footer__row footer__row-2">
+							<a href="#"><img src="images/socials/mastercard-icon.png" alt="payment"></a>
+							<a href="#"><img src="images/socials/visa-icon.png" alt="payment"></a>
+						</div>
+						<div class="footer__row footer__row-3">
+							<a href="#"><img src="images/socials/sbp-icon.png" alt="payment"></a>
+							<a href="#"><img src="images/socials/mir-icon.png" alt="payment"></a>
+						</div>
+						<div class="footer__row footer__row-4">
+							<a href="#"><img src="images/socials/yamarket-icon.png" alt="market"></a>
+						</div>
 					</div>
-					<div class="footer__row footer__row-2">
-						<a href="#"><img src="images/socials/mastercard-icon.png" alt="payment"></a>
-						<a href="#"><img src="images/socials/visa-icon.png" alt="payment"></a>
+					<div class="footer__column">
+						<span>Наше приложение:</span>
+						<div class="footer__gplay">
+							<a href="#"><img src="images/socials/gplay-icon.png" alt="app"></a>
+						</div>
+						<div>
+							<a href="#"><img src="images/socials/astore-icon.png" alt="app"></a>
+						</div>
 					</div>
-					<div class="footer__row footer__row-3">
-						<a href="#"><img src="images/socials/sbp-icon.png" alt="payment"></a>
-						<a href="#"><img src="images/socials/mir-icon.png" alt="payment"></a>
-					</div>
-					<div class="footer__row footer__row-4">
-						<a href="#"><img src="images/socials/yamarket-icon.png" alt="market"></a>
-					</div>
-				</div>
-				<div class="footer__column">
-					<span>Наше приложение:</span>
-					<div class="footer__gplay">
-						<a href="#"><img src="images/socials/gplay-icon.png" alt="app"></a>
-					</div>
-					<div>
-						<a href="#"><img src="images/socials/astore-icon.png" alt="app"></a>
-					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
 		<div class="footer__bottom"></div>
 	</footer>
+	<div class="overlay-burger">
+		
+	</div>
 </body>
 </html>
