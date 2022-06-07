@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Tenor+Sans&display=swap" rel="stylesheet">
 	<!-- ШРИФТЫ ВРЕМЕННЫЕ КОНЕЦ -->
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body id="body">
@@ -548,12 +549,12 @@
 			</div>
 		</div>
 	</section>
-	<section class="week-products cart-empty__slider">
+	<section class="week-products recommend-green">
 		<div class="container">
 			<h2 class="title week__title">Рекомендации</h2>
-			<div class="week__slider_container">
-				<div class="week__slider">
-					<div class="week__slide">
+			<div id="cart-empty__slider" class="swiper">
+				<div class="week__slider swiper-wrapper">
+					<div class="week__slide swiper-slide">
 						<div class="week__top">
 							<img src="images/product/product-image-1.jpg" alt="product">
 							<div class="week__top_stars top__stars">
@@ -576,7 +577,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="week__slide">
+					<div class="week__slide swiper-slide">
 						<div class="week__top">
 							<img src="images/product/product-image-2.jpg" alt="product">
 							<div class="week__top_stars top__stars">
@@ -599,7 +600,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="week__slide">
+					<div class="week__slide swiper-slide">
 						<div class="week__top">
 							<img src="images/product/product-image-3.jpg" alt="product">
 							<div class="week__top_stars top__stars">
@@ -622,7 +623,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="week__slide">
+					<div class="week__slide swiper-slide">
 						<div class="week__top">
 							<img src="images/product/product-image-1.jpg" alt="product">
 							<div class="week__top_stars top__stars">
@@ -645,7 +646,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="week__slide">
+					<div class="week__slide swiper-slide">
 						<div class="week__top">
 							<img src="images/product/product-image-2.jpg" alt="product">
 							<div class="week__top_stars top__stars">
@@ -669,7 +670,9 @@
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
+			<div class="cart-slider-prev green-slider-prev-arrow"></div>
+	  		<div class="cart-slider-next green-slider-next-arrow"></div>
 		</div>
 	</section>
 	<footer>
@@ -767,6 +770,7 @@
 	<script src="js/jquery.ui.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 	<!-- СКРИПТЫ КОНЕЦ -->
 </body>

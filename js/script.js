@@ -353,6 +353,35 @@ document.addEventListener('DOMContentLoaded', function(){
         },
       },
     });
+
+    const licensesSlider = new Swiper('#licenses-slider', {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 24,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.licenses-slider-next',
+        prevEl: '.licenses-slider-prev',
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          centeredSlides: true,
+        },
+
+        770: {
+          slidesPerView: 2,
+          centeredSlides: false,
+        },
+
+        1100: {
+          slidesPerView: 3,
+        },
+      },
+    });
   }
 
   
