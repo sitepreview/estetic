@@ -382,6 +382,19 @@ document.addEventListener('DOMContentLoaded', function(){
         },
       },
     });
+
+    const prodCardSlider = new Swiper('#product-card__slider', {
+      // Optional parameters
+      loop: false,
+      slidesPerView: 1,
+      watchOverflow: true,
+
+      // Navigation dots
+      pagination: {
+        el: '.product-card__dots',
+        clickable: true,
+      },
+    });
   }
 
   
@@ -874,6 +887,28 @@ document.addEventListener('DOMContentLoaded', function(){
           document.querySelectorAll('.agreement__content').forEach((el) => el.style.maxHeight = null)
         } else {
           document.querySelectorAll('.agreement__content').forEach((el) => el.style.maxHeight = null)
+          content.style.maxHeight = content.scrollHeight + 'px'
+        }
+      })
+    })
+  }
+
+
+  const inviteCheck = document.querySelector('.invite');
+  if (inviteCheck != null) {
+    document.querySelectorAll('.invite__trigger').forEach((el) => {
+      el.addEventListener('click', () => {
+
+        el.classList.toggle('active');
+
+        let content = el.nextElementSibling;
+
+        content.classList.toggle('active');
+
+        if (content.style.maxHeight) {
+          document.querySelectorAll('.invite__content').forEach((el) => el.style.maxHeight = null)
+        } else {
+          document.querySelectorAll('.invite__content').forEach((el) => el.style.maxHeight = null)
           content.style.maxHeight = content.scrollHeight + 'px'
         }
       })
