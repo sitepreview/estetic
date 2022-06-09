@@ -914,4 +914,30 @@ document.addEventListener('DOMContentLoaded', function(){
       })
     })
   }
+
+
+  const helpCheck = document.querySelector('.consult');
+  if (helpCheck != null) {
+    document.querySelectorAll('.consult__trigger').forEach((el) => {
+      el.addEventListener('click', () => {
+
+        const parent = el.parentNode;
+
+        parent.classList.toggle('active');
+
+        el.classList.toggle('active');
+
+        let content = el.nextElementSibling;
+
+        content.classList.toggle('active');
+
+        if (content.style.maxHeight) {
+          document.querySelectorAll('.consult__content').forEach((el) => el.style.maxHeight = null)
+        } else {
+          document.querySelectorAll('.consult__content').forEach((el) => el.style.maxHeight = null)
+          content.style.maxHeight = content.scrollHeight + 150 + 'px'
+        }
+      })
+    })
+  }
 });
