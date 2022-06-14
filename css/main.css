@@ -338,6 +338,7 @@ header nav ul a {
   display: flex;
   width: 25px;
   justify-content: center;
+  align-items: center;
   font-size: 16px;
   margin-left: 4px;
 }
@@ -1937,7 +1938,7 @@ section .account-title {
 .account__inner {
   display: flex;
   justify-content: space-between;
-  height: 964px;
+  height: 1080px;
 }
 
 section .account__title {
@@ -2073,6 +2074,7 @@ section .account__title {
   border-right: 1px solid #9EAC31;
   border-bottom: 1px solid #9EAC31;
   border-left: 1px solid #9EAC31;
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -4577,6 +4579,142 @@ section .reviews__title {
   font-size: 28px;
 }
 
+.account__button_content .fav-product__title {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.fav-product {
+  margin-top: 15px;
+}
+
+.fav-product:first-child {
+  margin-top: 10px;
+}
+
+.fav-product__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fav-product__row span {
+  font-family: 'Tenor Sans', serif;
+  font-size: 32px;
+  margin-right: 11px;
+}
+
+.fav-product__row img {
+  width: 35px;
+  height: 35px;
+}
+
+.popup-registration {
+  background-color: #fff;
+  width: 500px;
+  height: 400px;
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -250px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 15px 0px rgb(0 0 0 / 15%);
+  transition: opacity 0.2s;
+}
+
+.popup-registration h3 {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 32px;
+}
+
+.popup-registration span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px 15px 0 0;
+  cursor: pointer;
+}
+
+.popup-registration span img {
+  width: 16px;
+}
+
+.popup-registration div {
+  font-size: 18px;
+  width: 70%;
+  text-align: center;
+  margin: 20px 0 40px 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-registration input {
+  border: none;
+}
+
+.popup-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background-color: #000;
+  opacity: 0;
+  transition-duration: 0.2s;
+}
+
+.popup-registration.active {
+  z-index: 11;
+  opacity: 1;
+}
+
+.popup-overlay.active {
+  z-index: 10;
+  opacity: 0.5;
+}
+
+.specialist__status {
+  font-size: 20px;
+  margin: 10px 0 20px 0;
+}
+
+.specialist__status span.enabled {
+  color: #9EAC31;
+}
+
+.specialist__status span.disabled {
+  color: #FF3D3D;
+}
+
+.account__button_content form:first-child {
+  margin: 15px 0;
+}
+
+.specialist__note {
+  margin-bottom: 10px;
+}
+
+.specialist__docs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.specialist__form p:first-child {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.specialist__form p input:last-child {
+  margin-top: 10px;
+}
+
 /* МЕДИА ЗАПРОСЫ НАЧАЛО */
 
 @media (max-width: 1923px) {
@@ -4796,7 +4934,7 @@ section .reviews__title {
   }
 
   .account__inner {
-    height: 880px;
+    height: 950px;
   }
 
   .account__left {
@@ -5950,6 +6088,27 @@ section .reviews__title {
   .reviews__thanks {
     font-size: 26px;
   }
+
+  .fav-product {
+    margin-top: 10px;
+  }
+
+  .fav-product:first-child {
+    margin-top: 5px;
+  }
+
+  .account__button_content .fav-product__title {
+    font-size: 16px;
+  }
+
+  .fav-product__row span {
+    font-size: 24px;
+  }
+
+  .fav-product__row img {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -6897,7 +7056,7 @@ section .reviews__title {
   }
 
   .account__inner {
-    height: 620px;
+    height: 700px;
   }
 
   .account__right {
@@ -7467,6 +7626,45 @@ section .reviews__title {
   .reviews__thanks {
     font-size: 24px;
   }
+
+  .fav-product:first-child {
+    margin-top: 0;
+  }
+
+  .account__button_content .fav-product__title {
+    font-size: 14px;
+  }
+
+  .fav-product__row span {
+    font-size: 20px;
+  }
+
+  .fav-product__row img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .popup-registration {
+    width: 450px;
+    height: 350px;
+    margin-top: -175px;
+    margin-left: -225px;
+  }
+
+  .popup-registration h3 {
+    font-size: 26px;
+  }
+
+  .popup-registration div {
+    font-size: 16px;
+    margin: 15px 0 30px 0;
+  }
+
+  .account-registration__inputs_enter {
+    width: 335px;
+    height: 60px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -7893,6 +8091,7 @@ section .reviews__title {
   .account__right {
     padding: 0;
     margin: 34px 0 84px 0;
+    display: flex;
   }
 
   .account__content {
@@ -7924,6 +8123,7 @@ section .reviews__title {
   }
 
   .account__button_trigger {
+    margin: 0 auto;
     margin-bottom: 14px;
     font-size: 18px;
     height: 54px;
@@ -8492,6 +8692,27 @@ section .reviews__title {
 
   .reviews__thanks {
     font-size: 20px;
+  }
+
+  .fav-product {
+    margin-top: 15px;
+  }
+
+  .fav-product:first-child {
+    margin-top: 10px;
+  }
+
+  .account__button_content .fav-product__title {
+    font-size: 18px;
+  }
+
+  .fav-product__row span {
+    font-size: 24px;
+  }
+
+  .fav-product__row img {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -9607,6 +9828,20 @@ section .reviews__title {
 
   .wholesale__notes {
     margin-top: 28px;
+  }
+
+  .popup-registration {
+    width: 320px;
+    margin-left: -160px;
+  }
+
+  .popup-registration h3 {
+    font-size: 24px;
+  }
+
+  .popup-registration div {
+    font-size: 14px;
+    margin: 15px 0 35px 0;
   }
 }
 

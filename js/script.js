@@ -167,6 +167,7 @@ $(document).ready(function(){
 
 // native JS
 document.addEventListener('DOMContentLoaded', function(){
+  const blockBody = document.getElementById('body');
   let swiperCheck = document.querySelector(".swiper");
   if (swiperCheck != null) {
     const firstSlider = new Swiper('.first-slider', {
@@ -445,14 +446,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     const headerCatButton = document.querySelector('.header__catalog');
-    const headerCatOverlay = document.querySelector('.catalog-tabs__overlay');
-    const bodyOverflow = document.getElementById('body');
 
     headerCatButton.addEventListener('click', () => {
       headerCatButton.classList.toggle('active');
       catTabs.classList.toggle('active');
-      headerCatOverlay.classList.toggle('active');
-      bodyOverflow.classList.toggle('active');
     })
 
 
@@ -486,7 +483,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const mobBurgerBtn = document.querySelector('.header-mob__burger');
     const mobBurger = document.querySelector('.burger-menu');
     const mobBurgerOverlay = document.querySelector('.overlay-burger');
-    const blockBody = document.getElementById('body');
 
     const mobBurgerCloseBtn = document.querySelector('.header-mob__burger_close');
     const mobBurgerBackBtn = document.querySelector('.header-mob__burger_back');
@@ -642,6 +638,26 @@ document.addEventListener('DOMContentLoaded', function(){
           change.classList.add('replace');
         })
       })
+
+
+      const popupRegistr = document.querySelector('.popup-registration');
+      const popupOverlay = document.querySelector('.popup-overlay');
+      const closePopupBtn = document.querySelector('.popup-registration__close');
+      document.querySelectorAll('.product__like').forEach((item) =>
+        item.addEventListener('click', () => {
+          popupRegistr.classList.add('active');
+          popupOverlay.classList.add('active');
+          blockBody.classList.add('active');
+      }))
+
+      function closePopup(){
+        popupRegistr.classList.remove('active');
+        popupOverlay.classList.remove('active');
+        blockBody.classList.remove('active');
+      }
+
+      popupOverlay.addEventListener('click',closePopup);
+      closePopupBtn.addEventListener('click',closePopup);
   }
 
 

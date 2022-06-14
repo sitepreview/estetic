@@ -570,13 +570,52 @@
 							<div class="account__button">
 								<div class="account__button_trigger">Статус специалиста</div>
 								<div class="account__button_content">
-									
+									<div class="specialist__status">Статус: <span class="disabled">Отключен</span> <span class="enabled">Подключен</span></div>
+									<div class="specialist__note">Для получения статуса специалиста необходимо загрузить документы</div>
+									<div class="specialist__docs">
+										<form class="specialist__form" enctype="multipart/form-data" method="post">
+											<p>Паспорт</p>
+											<p><input type="file">
+											<input type="submit" value="Отправить"></p>
+									    </form>
+									    <form class="specialist__form" enctype="multipart/form-data" method="post">
+											<p>Документ о профессиональном образовании Специалиста (диплом, сертификаты)</p>
+											<p><input type="file">
+											<input type="submit" value="Отправить"></p>
+									    </form>
+									</div> 
 								</div>
 							</div>
 							<div class="account__button">
 								<div class="account__button_trigger">Любимые покупки</div>
 								<div class="account__button_content">
-									
+									<div class="fav-product">
+										<a href="#" class="fav-product__title">Сыворотка для лица</a>
+										<div class="fav-product__row">
+											<span>1200 ₽</span>
+											<a href="#">
+												<img src="images/header/basket-icon.svg" alt="basket">
+											</a>
+										</div>
+									</div>
+									<div class="fav-product">
+										<a href="#" class="fav-product__title">Сыворотка для лица</a>
+										<div class="fav-product__row">
+											<span>1200 ₽</span>
+											<a href="#">
+												<img src="images/header/basket-icon.svg" alt="basket">
+											</a>
+										</div>
+									</div>
+									<div class="fav-product">
+										<a href="#" class="fav-product__title">Сыворотка для лица</a>
+										<div class="fav-product__row">
+											<span>1200 ₽</span>
+											<a href="#">
+												<img src="images/header/basket-icon.svg" alt="basket">
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="account__button">
@@ -596,6 +635,12 @@
 										<div>Cтатус: Получен</div>
 									</div>
 									<a href="#">Все платежи</a>
+								</div>
+							</div>
+							<div class="account__button">
+								<div class="account__button_trigger">Статус доставки</div>
+								<div class="account__button_content">
+									
 								</div>
 							</div>
 						</div>
