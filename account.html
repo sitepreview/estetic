@@ -575,13 +575,15 @@
 									<div class="specialist__docs">
 										<form class="specialist__form" enctype="multipart/form-data" method="post">
 											<p>Паспорт</p>
-											<p><input type="file">
-											<input type="submit" value="Отправить"></p>
+											<input type="file" class="spec-file__input" id="spec-file-1" name="myfile" multiple>
+											<label for="spec-file-1" class="spec-file__custom">Выберите файлы</label>
+											<input type="submit" value="Добавить">
 									    </form>
 									    <form class="specialist__form" enctype="multipart/form-data" method="post">
 											<p>Документ о профессиональном образовании Специалиста (диплом, сертификаты)</p>
-											<p><input type="file">
-											<input type="submit" value="Отправить"></p>
+											<input type="file" class="spec-file__input" id="spec-file-2" name="myfile" multiple>
+											<label for="spec-file-2" class="spec-file__custom">Выберите файлы</label>
+											<input type="submit" value="Добавить">
 									    </form>
 									</div> 
 								</div>
@@ -640,7 +642,11 @@
 							<div class="account__button">
 								<div class="account__button_trigger">Статус доставки</div>
 								<div class="account__button_content">
-									
+									<div class="del-status">
+										<div>Трек-номер: <span>123456</span></div>
+										<div>Статус доставки: <span>В пути</span></div>
+										<a href="#">Предыдущие статусы</a>
+									</div>
 								</div>
 							</div>
 						</div>

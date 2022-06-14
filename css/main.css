@@ -1485,6 +1485,39 @@ footer nav ul li:last-child {
   opacity: 1;
 }
 
+.catalog-brands__block {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.catalog-brands__block:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 4px;
+}
+
+.catalog-brands__block:last-child {
+  padding: 10px 0 4px 0;
+}
+
+.catalog-brands__block div {
+  width: 47%;
+}
+
+.catalog-brands__block span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.catalog-brands__block a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog-brands__block a:focus {
+  color: #9EAC31;
+  text-decoration: underline;
+}
+
 .custom-checkbox {
   position: absolute;
   z-index: -1;
@@ -1925,8 +1958,6 @@ section .account-title {
   color: rgba(0, 0, 0, 0.5);
 }
 
-
-
 .account {
   display: flex;
 }
@@ -1938,7 +1969,6 @@ section .account-title {
 .account__inner {
   display: flex;
   justify-content: space-between;
-  height: 1080px;
 }
 
 section .account__title {
@@ -1953,7 +1983,7 @@ section .account__title {
 .account__left {
   background-color: #F5F3EF;
   width: 44.6%;
-  padding: 200px 111px 0 120px;
+  padding: 200px 111px 120px 120px;
 }
 
 .account__right {
@@ -2024,10 +2054,6 @@ section .account__title {
   display: flex;
   padding-left: 46px;
   gap: 54px;
-}
-
-.account__button {
-
 }
 
 .account__button:last-child {
@@ -4698,6 +4724,7 @@ section .reviews__title {
 
 .specialist__note {
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .specialist__docs {
@@ -4706,12 +4733,46 @@ section .reviews__title {
   gap: 10px;
 }
 
-.specialist__form p:first-child {
-  margin-bottom: 10px;
+.specialist__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   font-size: 18px;
 }
 
-.specialist__form p input:last-child {
+.specialist__form input[type=submit] {
+  border: none;
+  color: #fff;
+  background-color: #9EAC31;
+  width: 110px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.spec-file__custom {
+  color: #9EAC31;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.spec-file__input {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+
+.del-status {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.del-status a {
   margin-top: 10px;
 }
 
@@ -4933,13 +4994,10 @@ section .reviews__title {
     margin: 0;
   }
 
-  .account__inner {
-    height: 950px;
-  }
-
   .account__left {
     padding-right: 80px;
     padding-top: 156px;
+    padding-bottom: 100px;
   }
 
   .account__right {
@@ -6109,6 +6167,38 @@ section .reviews__title {
     width: 28px;
     height: 28px;
   }
+
+  .specialist__status {
+    font-size: 16px;
+    margin: 5px 0 15px 0;
+  }
+
+  .specialist__note {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .specialist__form {
+    font-size: 14px;
+    gap: 7px;
+  }
+
+  .specialist__docs {
+    gap: 5px;
+  }
+
+  .account__button_content form:first-child {
+    margin: 10px 0;
+  }
+
+  .specialist__form input[type=submit] {
+    width: 95px;
+  }
+
+  .del-status {
+    font-size: 16px;
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -7055,16 +7145,12 @@ section .reviews__title {
     background-size: 50%;
   }
 
-  .account__inner {
-    height: 700px;
-  }
-
   .account__right {
     padding: 30px 70px 0 30px;
   }
 
   .account__left {
-    padding: 104px 60px 0 75px;
+    padding: 104px 60px 80px 75px;
   }
 
   .account__button_trigger {
@@ -7665,6 +7751,25 @@ section .reviews__title {
     height: 60px;
     font-size: 20px;
   }
+
+  .specialist__status {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+
+  .specialist__note {
+    font-size: 13px;
+  }
+
+  .del-status {
+    font-size: 14px;
+    margin: 0;
+    gap: 7px;
+  }
+
+  .catalog-brands__block {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -7821,8 +7926,8 @@ section .reviews__title {
     padding: 11px 22px 29px 22px;
     box-shadow: 2px 4px 8px 0px #00000026;
     margin-top: 0;
-    top: -95px;
-    left: -5%;
+    top: -79px;
+    left: -7.1%;
   }
 
   .catalog__products_container {
@@ -8062,7 +8167,6 @@ section .reviews__title {
   .account__inner {
     flex-direction: column;
     justify-content: center;
-    height: auto;
   }
 
   .account__left, .account__right {
@@ -8714,6 +8818,34 @@ section .reviews__title {
     width: 30px;
     height: 30px;
   }
+
+  .specialist__status {
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+  }
+
+  .specialist__note {
+    font-size: 16px;
+  }
+
+  .account__button_content form:first-child {
+    margin: 15px 0;
+  }
+
+  .specialist__form {
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .specialist__docs {
+    gap: 10px;
+  }
+
+  .del-status {
+    font-size: 18px;
+    margin: 10px;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 875px) {
@@ -8845,6 +8977,11 @@ section .reviews__title {
 
   .catalog {
     margin: 35px 0 20px 0;
+  }
+
+  .catalog__filters {
+    top: -88px;
+    left: -5%;
   }
 
   section .shopping-application__title {
