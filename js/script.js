@@ -179,6 +179,11 @@ document.addEventListener('DOMContentLoaded', function(){
         nextEl: '.first-slider-next',
         prevEl: '.first-slider-prev',
       },
+
+      pagination: {
+        el: '.first-slider__dots',
+        clickable: true,
+      },
     });
 
     const newSlider = new Swiper('#new__slider', {

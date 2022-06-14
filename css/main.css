@@ -587,6 +587,24 @@ h1.first-slider__title {
   margin-right: 24px;
 }
 
+.swiper .first-slider__dots {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+  gap: 10px;
+}
+
+.first-slider__dots span {
+  width: 17px;
+  height: 17px;
+}
+
+.first-slider__dots .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
 section.popular {
   padding: 160px 0;
 }
@@ -3089,6 +3107,10 @@ section.product-card {
   right: 0;
 }
 
+.product-card__image_action img {
+  margin-left: auto;
+}
+
 .product-card__image_action p {
   position: absolute;
   top: 29px;
@@ -3750,7 +3772,7 @@ section .delivery-payment__title {
   border: none;
   height: 48px;
   padding-left: 20px;
-  width: 340px;
+  width: 375px;
   border-radius: 2px;
 }
 
@@ -3873,7 +3895,7 @@ section.recommend {
 }
 
 section .sale__title {
-  margin: 47px 0 64px 0;
+  margin: 15px 0 20px 0;
 }
 
 .sale__banners {
@@ -3927,7 +3949,7 @@ section .sale__title {
 }
 
 section.sale-card {
-  margin: 180px 0 150px 0;
+  margin: 45px 0 90px 0;
 }
 
 .sale-card__inner {
@@ -3976,7 +3998,7 @@ section.sale-card {
 }
 
 section.wholesale {
-  margin: 154px 0 168px 0;
+  margin: 100px 0 120px 0;
 }
 
 section .wholesale__title {
@@ -4850,10 +4872,6 @@ section .reviews__title {
     margin-right: 40px;
   }
 
-  section .sale__title {
-    margin-top: 25px;
-  }
-
   .sale-banner {
     height: 250px;
   }
@@ -4874,10 +4892,6 @@ section .reviews__title {
     font-size: 260px;
     margin-right: -13px;
     line-height: 290px;
-  }
-
-  section.sale-card {
-    margin: 160px 0 140px 0;
   }
 
   .sale-card__title, .sale-card__text ul span {
@@ -5137,7 +5151,6 @@ section .reviews__title {
   }
 
   h2.title {
-    margin-bottom: 35px;
     font-size: 39px;
   }
 
@@ -5880,10 +5893,6 @@ section .reviews__title {
 
   .special-price p {
     font-size: 20px;
-  }
-
-  section.wholesale {
-    margin: 130px 0;
   }
 
   .wholesale__container {
@@ -7379,7 +7388,7 @@ section .reviews__title {
   }
 
   section.sale-card {
-    margin: 100px 0 110px 0;
+    margin: 40px 0 70px 0;
   }
 
   .sale-card__title, .sale-card__text ul span {
@@ -7397,7 +7406,7 @@ section .reviews__title {
   }
 
   section.wholesale {
-    margin: 90px 0;
+    margin: 70px 0;
   }
 
   section .wholesale__title {
@@ -7770,6 +7779,10 @@ section .reviews__title {
   .catalog-brands__block {
     font-size: 12px;
   }
+
+  .swiper .first-slider__dots {
+    bottom: 40px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -7823,6 +7836,10 @@ section .reviews__title {
 
   .footer__group-1, .footer__group-3 {
     gap: 50px;
+  }
+
+  .swiper .first-slider__dots {
+    bottom: 50px;
   }
 }
 
@@ -7888,6 +7905,10 @@ section .reviews__title {
     width: 52px;
     height: 52px;
     background: url(../images/mobile/arrow-controller-white-mob.svg) no-repeat center;
+  }
+
+  .swiper .first-slider__dots {
+    bottom: 60px;
   }
 }
 
@@ -8551,7 +8572,7 @@ section .reviews__title {
   }
 
   section .sale__title {
-    margin: 48px 0 40px 0;
+    margin: 30px 0 25px 0;
   }
 
   .sale__banners {
@@ -9122,7 +9143,7 @@ section .reviews__title {
 
   .delivery__tabs-mob select, .delivery-payment__tabs-mob select {
     font-size: 13px;
-    width: 300px;
+    width: 320px;
   }
 
   .delivery__tabs_content_title, .delivery-payment__tabs_content_title {
