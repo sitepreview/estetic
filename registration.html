@@ -540,12 +540,13 @@
 		</div>
 		<div class="account-registration__inputs">
 			<div class="account-registration__title_small">Ваши данные:</div>
-			<div><input type="text" placeholder="Имя*" class="account-input-text"></div>
-			<div><input type="text" placeholder="Фамилия*" class="account-input-text"></div>
-			<div><input type="text" placeholder="E-mail*" class="account-input-text"></div>
-			<div><input type="text" placeholder="Телефон*" class="account-input-text"></div>
-			<div class="account-input-text__wrong"><input type="text" placeholder="Введите ваш логин*" class="account-input-text account-input-text__wrong"><p>Неверный логин.</p></div>
-			<div class="account-input-text__wrong"><img src="images/login/password-icon-hide.svg" alt="eye"><input type="password" placeholder="Введите ваш пароль*" class="account-input-text"><p>Неверный пароль.</p></div>
+			<div><input type="text" placeholder="Имя*" class="account-input-text" maxlength="30" pattern="[A-Za-zА-Яа-яЁё]{1,30}$" required></div>
+			<div><input type="text" placeholder="Фамилия*" class="account-input-text" maxlength="30" pattern="[A-Za-zА-Яа-яЁё]{1,30}$" required></div>
+			<div><input type="email" placeholder="E-mail*" class="account-input-text" maxlength="30" required></div>
+			<div><input type="tel" placeholder="Телефон*" class="account-input-text" maxlength="30" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required></div>
+			<div class="account-input-text__wrong"><input type="text" placeholder="Введите ваш логин*" class="account-input-text account-input-text__wrong" maxlength="30"><p>Неверный логин.</p></div>
+			<div class="account-input-text__wrong"><img src="images/login/password-icon-hide.svg" alt="eye"><input type="password" placeholder="Введите ваш пароль*" class="account-input-text" maxlength="30"><p>Неверный пароль.</p></div>
+			<span class="shopping-application__mark shopping-application__mark_error">* Исправьте ошибки в форме</span>
 			<div><input type="submit" value="Зарегистрироваться" class="account-registration__inputs_enter"></div>
 		</div>
 		<div class="account-registration__info-2">

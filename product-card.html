@@ -676,9 +676,9 @@
 								<span>Ваши данные:</span>
 								<div class="product-card__tabs_question">
 									<div>
-										<input type="text" placeholder="Имя*">
-										<input type="text" placeholder="Фамилия*">
-										<input type="text" placeholder="E-mail*">
+										<input type="text" placeholder="Имя*" maxlength="30" pattern="[A-Za-zА-Яа-яЁё]{1,30}$" required>
+										<input type="text" placeholder="Фамилия*" maxlength="30" pattern="[A-Za-zА-Яа-яЁё]{1,30}$" required>
+										<input type="email" placeholder="E-mail*" maxlength="30" required>
 									</div>
 									<div>
 										<textarea type="text" placeholder="Задайте ваш вопрос*"></textarea>

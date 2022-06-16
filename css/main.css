@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  transition-duration: 0.2s;
 }
 
 *:focus {
@@ -528,35 +529,6 @@ h1.first-slider__title {
   backdrop-filter: blur(3px);
 }
 
-.slick-arrow {
-  font-size: 0;
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.first-slider .slick-arrow {
-  border: none;
-  background: url(../images/first-slider/arrow-controller.png) no-repeat center #fff;
-  bottom: 40px;
-}
-
-.first-slider .slick-next {
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  right: 120px;
-}
-
-.first-slider .slick-prev {
-  right: 226px;
-}
-
 .first-slider__nav {
   position: absolute;
   top: 75%;
@@ -889,19 +861,6 @@ section.recommend-green {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
   right: 0;
-}
-
-.week__slider .slick-next {
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  right: 0;
-}
-
-.week__slider .slick-prev {
-  left: 0;
 }
 
 .week__top_stars {
@@ -2162,6 +2121,40 @@ section .account__title {
   text-decoration: underline;
 }
 
+.account__card {
+  background: url(../images/account/card.png) no-repeat center top / cover;
+  width: 100%;
+  max-width: 485px;
+  max-height: 274px;
+  border-radius: 8px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.account__card img {
+  max-width: 160px;
+}
+
+.account__card_title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 22px;
+  padding: 13px 0;
+}
+
+.account__card_sales {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.account__card_sales span {
+  color: #8F9E23;
+  font-weight: 700;
+}
+
 .back-link {
   display: flex;
   align-items: center;
@@ -2446,6 +2439,19 @@ section.shopping-application {
   border-radius: 4px;
   margin: 10px;
   padding-left: 17px;
+}
+
+input:invalid {
+  border: 1px solid #FF3D3D!important;
+}
+
+body .shopping-application__mark_error {
+  color: #FF3D3D;
+  margin: 5px 0;
+}
+
+.account-registration__inputs .shopping-application__mark_error {
+  margin: -10px 0 10px 0;
 }
 
 .shopping-application__inputs textarea {
@@ -2790,6 +2796,7 @@ section .contacts__title {
   width: 100%;
   padding-left: 30px;
   color: rgba(0, 0, 0, 0.6);
+  height: 44px;
 }
 
 .header-mob__search .search__button {
@@ -3774,6 +3781,7 @@ section .delivery-payment__title {
   padding-left: 20px;
   width: 375px;
   border-radius: 2px;
+  color: #000;
 }
 
 .delivery__tabs_item:nth-child(5) ol, .delivery__tabs_item:nth-child(6) ol,
@@ -4770,6 +4778,9 @@ section .reviews__title {
   padding: 5px;
   border-radius: 4px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .spec-file__custom {
@@ -4797,6 +4808,47 @@ section .reviews__title {
 .del-status a {
   margin-top: 10px;
 }
+
+/* ХОВЕР ЭФФЕКТЫ НАЧАЛО */
+
+.header__number:hover {
+  background-color: #fff;
+}
+
+.header__call:hover,
+.header__expired:hover,
+.header__catalog:hover {
+  background-color: #466113;
+}
+
+.first-slider__catalog:hover,
+.account__button_trigger:hover,
+.search__button:hover, .invite__search_button:hover {
+  background-color: #859318;
+}
+
+.account__button--active .account__button_trigger:hover {
+  background-color: #fff;
+}
+
+.first-slider__sales:hover {
+  background-color: #fff;
+  backdrop-filter: unset;
+}
+
+.first-slider__cta a:last-child:hover,
+.header__top a:hover {
+  color: #9EAC31;
+}
+
+.popular__button:hover,
+.consult__all_btn:hover,
+.product-card__col div:nth-child(7) button:hover a {
+  border-color: #9EAC31;
+  color: #9EAC31;
+}
+
+/* ХОВЕР ЭФФЕКТЫ КОНЕЦ */
 
 /* МЕДИА ЗАПРОСЫ НАЧАЛО */
 
@@ -5027,10 +5079,6 @@ section .reviews__title {
     width: 50%;
   }
 
-  .account__card {
-    width: 50%;
-  }
-
   .account__button_trigger {
     height: 65px;
   }
@@ -5038,11 +5086,6 @@ section .reviews__title {
   .account__button_trigger {
     margin-bottom: 15px;
     font-size: 20px;
-    /*max-width: 320px;*/
-  }
-
-  .account__button_content {
-    /*max-width: 320px;*/
   }
 
   .account__button_sale, .account__button_number, .account__button_content .account__button_number a {
@@ -5092,10 +5135,6 @@ section .reviews__title {
     margin: 10px 0 15px;
   }
 
-  .account__card img {
-    height: 225px;
-  }
-
   .mailing__container {
     width: 50%;
   }
@@ -5129,15 +5168,6 @@ section .reviews__title {
   .first-slider__sales {
     width: 262px;
     height: 70px;
-  }
-
-  .first-slider .slick-arrow {
-    bottom: 25px;
-  }
-
-  .slick-arrow {
-    width: 75px;
-    height: 75px;
   }
 
   .first-slider__nav div {
@@ -6208,6 +6238,26 @@ section .reviews__title {
     font-size: 16px;
     margin-top: 5px;
   }
+
+  .account__card {
+    max-width: 380px;
+    height: 225px;
+    padding-left: 35px;
+  }
+
+  .account__card img {
+    max-width: 120px;
+  }
+
+  .account__card_title {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  .account__card_sales {
+    font-size: 12px;
+    gap: 5px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -6263,10 +6313,6 @@ section .reviews__title {
 
   .account__content {
     gap: 25px;
-  }
-
-  .account__card {
-    width: 60%;
   }
 
   .account__button_trigger {
@@ -7168,10 +7214,6 @@ section .reviews__title {
     margin-bottom: 12px;
   }
 
-  .account__card img {
-    height: 180px;
-  }
-
   .account__data {
     padding: 25px 22px 30px 29px;
     min-width: 340px;
@@ -7755,7 +7797,7 @@ section .reviews__title {
     margin: 15px 0 30px 0;
   }
 
-  .account-registration__inputs_enter {
+  .popup-registration .account-registration__inputs_enter {
     width: 335px;
     height: 60px;
     font-size: 20px;
@@ -7783,6 +7825,26 @@ section .reviews__title {
   .swiper .first-slider__dots {
     bottom: 40px;
   }
+
+  .account__card {
+    max-width: 327px;
+    height: 185px;
+    padding-left: 27px;
+  }
+
+  .account__card img {
+    max-width: 108px;
+  }
+
+  .account__card_title {
+    font-size: 16px;
+    padding: 7px 0;
+  }
+
+  .account__card_sales {
+    font-size: 11px;
+    gap: 2px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -7792,10 +7854,6 @@ section .reviews__title {
 
   .header__search input {
     width: 150px;
-  }
-
-  .first-slider .slick-arrow {
-    bottom: 60px;
   }
 
   .week__slide {
@@ -7840,6 +7898,10 @@ section .reviews__title {
 
   .swiper .first-slider__dots {
     bottom: 50px;
+  }
+
+  .account__card {
+    width: 63%;
   }
 }
 
@@ -8164,14 +8226,6 @@ section .reviews__title {
     font-size: 16px;
   }
 
-  .week__slider .slick-prev {
-    left: 35%;
-  }
-
-  .week__slider .slick-next {
-    right: 35%;
-  }
-
   .account__item {
     margin-bottom: 29px;
   }
@@ -8200,10 +8254,6 @@ section .reviews__title {
 
   .account__buttons, .account__card {
     width: 100%;
-  }
-
-  .account__card img {
-    height: auto;
   }
 
   .account__data {
@@ -9679,14 +9729,6 @@ section .reviews__title {
     line-height: 24px;
   }
 
-  .week__slider .slick-prev {
-    left: 30%;
-  }
-
-  .week__slider .slick-next {
-    right: 30%;
-  }
-
   .week__bottom .new__bottom_title {
     font-size: 20px;
   }
@@ -10004,14 +10046,6 @@ section .reviews__title {
 }
 
 @media (max-width: 500px) {
-  .week__slider .slick-prev {
-    left: 20%;
-  }
-
-  .week__slider .slick-next {
-    right: 20%;
-  }
-
   .footer__phone {
     position: absolute;
   }

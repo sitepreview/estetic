@@ -544,14 +544,15 @@
 					<span>Ваши данные:</span>
 					<div class="question__inputs">
 						<div>
-							<input type="text" placeholder="Имя*">
-							<input type="text" placeholder="Фамилия*">
-							<input type="text" placeholder="E-mail*">
+							<input type="text" placeholder="Имя*" maxlength="30" pattern="[A-Za-zА-Яа-яЁё]{1,30}$" required>
+							<input type="text" placeholder="Фамилия*" maxlength="30" pattern="[A-Za-zА-Яа-яЁё]{1,30}$" required>
+							<input type="email" placeholder="E-mail*" maxlength="30" required>
 						</div>
 						<div>
 							<textarea type="text" placeholder="Задайте ваш вопрос*"></textarea>
 						</div>
 					</div>
+					<div class="shopping-application__mark shopping-application__mark_error">* Исправьте ошибки в форме</div>
 					<div class="question__send"><input type="submit"></div>
 				</div>
 			</div>
