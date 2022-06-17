@@ -1,171 +1,3 @@
-// JQuery
-$(document).ready(function(){
- /* $('.first-slider').slick({
-  	//autoplay: true,
-    autoplaySpeed: 4000
-  });*/
-
-  /*$('.new__slider').slick({
-  	//autoplay: true,
-    autoplaySpeed: 4000,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 1130,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 875,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });*/
-
-  /*$('.week__slider').slick({
-  	//autoplay: true,
-    autoplaySpeed: 4000,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-      {
-        breakpoint: 1130,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 875,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 650,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });*/
-
-  /*$('.popular-category__slider').slick({
-    //autoplay: true,
-    autoplaySpeed: 4000,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1130,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });*/
-  
-
-    $(function() {
-      $('.product__like').click(function() {
-      $(this).toggleClass('active');
-      });
-    });
-
-    $(function() {
-      $('.product-card__like').click(function() {
-      $(this).toggleClass('active');
-      });
-    });  
-
-
-    $(function() {
-      $('.popular__button').click(function() {
-      $('.popular__row_hidden').toggleClass('active');
-      $(this).toggleClass('active');
-      });
-    });
-
-    function checkWidth() {
-      var windowWidth = $('body').innerWidth(),
-          elem = $(".popular__row_multi"); // лучше сохранять объект в переменную, многократно чтобы не насиловать 
-                                        // страницу для поиска нужного элемента
-      if(windowWidth < 1130){
-        elem.addClass('popular__row_hidden');
-      }
-      else{
-        elem.removeClass('popular__row_hidden');
-      }
-    }
-
-    checkWidth(); // проверит при загрузке страницы
-
-    $(window).resize(function(){
-      checkWidth(); // проверит при изменении размера окна клиента
-    });
-
-
-
-    $(".polzunok-5").slider({
-    min: 0,
-    max: 10000,
-    values: [0, 10000],
-    range: true,
-    animate: "fast",
-    slide : function(event, ui) {    
-        $(".polzunok-input-5-left").val(ui.values[ 0 ]);   
-        $(".polzunok-input-5-right").val(ui.values[ 1 ]);  
-    }    
-    });
-  $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0));
-  $(".polzunok-input-5-right").val($(".polzunok-5").slider("values", 1));
-  $(".polzunok-container-5 input").change(function() {
-      var input_left = $(".polzunok-input-5-left").val().replace(/[^0-9]/g, ''),    
-      opt_left = $(".polzunok-5").slider("option", "min"),
-      where_right = $(".polzunok-5").slider("values", 1),
-      input_right = $(".polzunok-input-5-right").val().replace(/[^0-0]/g, ''),    
-      opt_right = $(".polzunok-5").slider("option", "max"),
-      where_left = $(".polzunok-5").slider("values", 0); 
-      if (input_left > where_right) { 
-          input_left = where_right;
-      }
-      if (input_left < opt_left) {
-          input_left = opt_left; 
-      }
-      if (input_left == "") {
-      input_left = 0;    
-      }        
-      if (input_right < where_left) { 
-          input_right = where_left; 
-      }
-      if (input_right > opt_right) {
-          input_right = opt_right; 
-      }
-      if (input_right == "") {
-      input_right = 0;    
-      }    
-      $(".polzunok-input-5-left").val(input_left); 
-      $(".polzunok-input-5-right").val(input_right); 
-      if (input_left != where_left) {
-          $(".polzunok-5").slider("values", 0, input_left);
-      }
-      if (input_right != where_right) {
-          $(".polzunok-5").slider("values", 1, input_right);
-      }
-  });  
-});
-
-
-// native JS
 document.addEventListener('DOMContentLoaded', function(){
   const blockBody = document.getElementById('body');
   let swiperCheck = document.querySelector(".swiper");
@@ -546,6 +378,28 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
 
+  let mainPageCheck = document.querySelector(".popular__services");
+  if (mainPageCheck != null) {
+    const popularBtn = document.querySelector(".popular__button");
+    const popularHidden = document.querySelectorAll(".popular__row_hidden");
+    const popularMulti = document.querySelector(".popular__row_multi");
+
+    popularBtn.addEventListener("click", function() {
+      popularBtn.classList.toggle('active');
+      popularHidden.forEach(function(item) {
+        item.classList.toggle('active');
+      });
+    })
+
+    if (window.innerWidth <= 1130) {
+      popularMulti.classList.add('popular__row_hidden');
+    }
+    else {
+      popularMulti.classList.remove('popular__row_hidden');
+    }
+  }
+
+
   let catalogPageCheck = document.querySelector(".catalog__switch");
   if (catalogPageCheck != null) {
     const catalogSwitcherOne = document.querySelector(".catalog__switch-1");
@@ -663,6 +517,50 @@ document.addEventListener('DOMContentLoaded', function(){
 
       popupOverlay.addEventListener('click',closePopup);
       closePopupBtn.addEventListener('click',closePopup);
+
+
+
+      const rangeSlider = document.getElementById('catalog__range_slider');
+
+      noUiSlider.create(rangeSlider, {
+          start: [0, 10000],
+          connect: true,
+          step: 1,
+          format: {
+            from: function(value) {
+                    return parseInt(value);
+                },
+            to: function(value) {
+                    return parseInt(value);
+                }
+          },
+          range: {
+              'min': 0,
+              'max': 10000
+          }
+      });
+
+      const rangeInput1 = document.getElementById('catalog__range_input-1');
+      const rangeInput2 = document.getElementById('catalog__range_input-2');
+      const rangeInputs = [rangeInput1, rangeInput2];
+
+      rangeSlider.noUiSlider.on('update', function(values, handle){
+        rangeInputs[handle].value = Math.round(values[handle]);
+      });
+
+      const setRangeSlider = (i, value) => {
+        let arr = [null, null];
+        arr[i] = value;
+        console.log(arr);
+        rangeSlider.noUiSlider.set(arr);
+      };
+
+      rangeInputs.forEach((el, index) => {
+        el.addEventListener('change', (e) => {
+          console.log(index);
+          setRangeSlider(index, e.currentTarget.value);
+        });
+      });
   }
 
 
@@ -791,6 +689,12 @@ document.addEventListener('DOMContentLoaded', function(){
           let change = basketBtn.parentElement;
           change.classList.add('replace');
         })
+
+
+        const prodCardLike = document.querySelector('.product-card__like');
+        prodCardLike.addEventListener("click", function() {
+          prodCardLike.classList.toggle('active');
+        })
   }
 
 
@@ -918,15 +822,16 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('.agreement__trigger').forEach((el) => {
       el.addEventListener('click', () => {
 
-        el.classList.toggle('active');
-
         let content = el.nextElementSibling;
 
         if (content.style.maxHeight) {
           document.querySelectorAll('.agreement__content').forEach((el) => el.style.maxHeight = null)
+          document.querySelectorAll('.agreement__trigger').forEach((el) => el.classList.remove('active'))
         } else {
           document.querySelectorAll('.agreement__content').forEach((el) => el.style.maxHeight = null)
+          document.querySelectorAll('.agreement__trigger').forEach((el) => el.classList.remove('active'))
           content.style.maxHeight = content.scrollHeight + 'px'
+          el.classList.add('active');
         }
       })
     })
@@ -938,17 +843,19 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('.invite__trigger').forEach((el) => {
       el.addEventListener('click', () => {
 
-        el.classList.toggle('active');
-
         let content = el.nextElementSibling;
-
-        content.classList.toggle('active');
 
         if (content.style.maxHeight) {
           document.querySelectorAll('.invite__content').forEach((el) => el.style.maxHeight = null)
+          document.querySelectorAll('.invite__content').forEach((el) => el.classList.remove('active'))
+          document.querySelectorAll('.invite__trigger').forEach((el) => el.classList.remove('active'))
         } else {
           document.querySelectorAll('.invite__content').forEach((el) => el.style.maxHeight = null)
+          document.querySelectorAll('.invite__content').forEach((el) => el.classList.remove('active'))
+          document.querySelectorAll('.invite__trigger').forEach((el) => el.classList.remove('active'))
           content.style.maxHeight = content.scrollHeight + 'px'
+          el.classList.add('active');
+          content.classList.add('active');
         }
       })
     })
@@ -962,19 +869,22 @@ document.addEventListener('DOMContentLoaded', function(){
 
         const parent = el.parentNode;
 
-        parent.classList.toggle('active');
-
-        el.classList.toggle('active');
-
         let content = el.nextElementSibling;
-
-        content.classList.toggle('active');
 
         if (content.style.maxHeight) {
           document.querySelectorAll('.consult__content').forEach((el) => el.style.maxHeight = null)
+          document.querySelectorAll('.consult__content').forEach((el) => el.classList.remove('active'))
+          document.querySelectorAll('.consult__item').forEach((el) => el.classList.remove('active'))
+          document.querySelectorAll('.consult__trigger').forEach((el) => el.classList.remove('active'))
         } else {
           document.querySelectorAll('.consult__content').forEach((el) => el.style.maxHeight = null)
+          document.querySelectorAll('.consult__content').forEach((el) => el.classList.remove('active'))
+          document.querySelectorAll('.consult__item').forEach((el) => el.classList.remove('active'))
+          document.querySelectorAll('.consult__trigger').forEach((el) => el.classList.remove('active'))
           content.style.maxHeight = content.scrollHeight + 150 + 'px'
+          parent.classList.add('active');
+          el.classList.add('active');
+          content.classList.add('active');
         }
       })
     })

@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Tenor+Sans&display=swap" rel="stylesheet">
 	<!-- ШРИФТЫ ВРЕМЕННЫЕ КОНЕЦ -->
+	<link rel="stylesheet" href="css/nouislider.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body id="body">
@@ -701,13 +702,11 @@
 					</div>
 					<div class="catalog__range">
 						<div class="catalog__range_title">Цена</div>
-						<div class="polzunok-container-5">
-							<div class="polzunok__inputs_container">
-							    <input type="number" class="polzunok-input-5-left">
-							    <input type="number" class="polzunok-input-5-right">
-							</div>    
-						    <div class="polzunok-5"></div>	
+						<div class="catalog__range_inputs">
+							<input type="number" max="10000" class="catalog__range_input" id="catalog__range_input-1">
+							<input type="number" max="10000" class="catalog__range_input" id="catalog__range_input-2">
 						</div>
+						<div id="catalog__range_slider"></div>
 					</div>
 					<div class="catalog__buttons_mob">
 						<button>Сбросить</button>
@@ -1454,10 +1453,7 @@
 		
 	</div>
 	<!-- СКРИПТЫ НАЧАЛО -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.ui.min.js"></script>
-	<script src="js/jquery.ui.touch-punch.min.js"></script>
-	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
 	<script src="js/script.js"></script>
 	<!-- СКРИПТЫ КОНЕЦ -->
 </body>
