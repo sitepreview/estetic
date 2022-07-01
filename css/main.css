@@ -239,11 +239,11 @@ input[type=submit]:hover {
   fill: #9EAC31;
 }
 
-.header__account:hover {
+.header__account a:hover {
   color: #9EAC31;
 }
 
-.header__account:hover path,
+.header__account a:first-child:hover path,
 .color-green-hover__account:hover path {
   stroke: #9EAC31;
 }
@@ -288,6 +288,18 @@ input[type=submit]:hover {
   color: #55721E;
 }
 
+#week__slider, #cart-empty__slider {
+  padding-top: 15px;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-15px);
+}
+
+.first-slider .swiper-slide:hover {
+  transform: translateY(0);
+}
+
 /* ХОВЕР ЭФФЕКТЫ КОНЕЦ */
 
 /* КОРЗИНА И ЛАЙК НАЧАЛО (убрать) */
@@ -317,6 +329,77 @@ input[type=submit]:hover {
 }
 
 /* КОРЗИНА И ЛАЙК КОНЕЦ */
+
+
+.first-slider__title,
+.mailing__title,
+.sale-card__text li {
+  transform: translateX(100%);
+  opacity: 0;
+  transition-duration: 0.8s;
+}
+
+.first-slider__title.active,
+.mailing__title.active,
+.sale-card__text li.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.company__image {
+  opacity: 0;
+  transition-duration: 0.7s;
+}
+
+.company__image.active {
+  opacity: 1;
+}
+
+.delivery-warning__title {
+  transform: translateY(-150px);
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.delivery-warning__title.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.delivery-warning__content {
+  opacity: 0;
+  transition-duration: 0.8s;
+}
+
+.delivery-warning__content.active {
+  opacity: 1;
+}
+
+.delivery-warning:first-child .delivery-warning__content {
+  transition-delay: 1s;
+}
+
+.delivery-warning:last-child .delivery-warning__title {
+  transition-delay: 1.7s;
+}
+
+.delivery-warning:last-child .delivery-warning__content {
+  transition-delay: 2.7s;
+}
+
+.sale-card__text li {
+  transition-duration: 0.7s;
+}
+
+.sale-card__text li:nth-child(2) {
+  transition-delay: 0.7s;
+}
+
+.sale-card__text li:nth-child(3) {
+  transition-delay: 1.4s;
+}
+
+
 
 header {
   transition-duration: 0s;
@@ -385,6 +468,15 @@ header nav ul a {
   cursor: pointer;
 }
 
+.header__account a {
+  display: flex;
+  align-items: center;
+}
+
+.header__account span {
+  margin-left: 8px;
+}
+
 .city__text {
   margin-left: 12px;
   font-size: 16px;
@@ -401,7 +493,6 @@ header nav ul a {
 
 .account__text {
   margin-left: 8px;
-  transition-duration: 0s;
 }
 
 .header__main {
@@ -667,6 +758,10 @@ header nav ul a {
   text-decoration: underline;
 }
 
+.swiper-slide {
+  height: auto;
+}
+
 .first-slider__slide {
   background: url(../images/first-slider/slide-1.jpg) no-repeat center top / cover;
   height: 443px;
@@ -856,7 +951,7 @@ section .new__title {
 }
 
 #new__slider, #hits__slider {
-  padding: 10px 10px 40px 10px;
+  padding: 22px 10px 40px 10px;
 }
 
 .slider-nav {
@@ -4054,7 +4149,7 @@ section.recommend {
 #recommend__slider {
   max-width: 1435px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 22px 10px 10px 10px;
 }
 
 .recommend-slide {
@@ -4405,6 +4500,7 @@ section.licenses {
 #licenses-slider {
   max-width: 1115px;
   margin: 0 auto;
+  padding-top: 15px;
 }
 
 .licenses__inner {
@@ -5007,6 +5103,75 @@ section .reviews__title {
 
 .del-status a {
   margin-top: 10px;
+}
+
+section.sitemap {
+  margin: 65px 0 180px 0;
+}
+
+section .sitemap__title {
+  margin-bottom: 28px;
+}
+
+.sitemap__subtitle {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 624px;
+  margin: 0 auto;
+}
+
+.sitemap__levels {
+  max-width: 1185px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.sitemap__level {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sitemap-second {
+  margin-left: 76px;
+}
+
+.sitemap-third {
+  margin-left: 114px;
+}
+
+.sitemap-fourth {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+  margin-left: 181px;
+}
+
+.sitemap__levels a {
+  color: #000;
+}
+
+.sitemap-first a {
+  font-size: 32px;
+}
+
+.sitemap-second a {
+  color: #55721E;
+  font-size: 26px;
+}
+
+.sitemap-third a {
+  font-size: 22px;
+}
+
+.sitemap-fourth a {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
 }
 
 /* МЕДИА ЗАПРОСЫ НАЧАЛО */
@@ -9516,7 +9681,7 @@ section .reviews__title {
   }
 
   #recommend__slider {
-    padding: 10px 5px;
+    padding: 22px 5px 10px 5px;
   }
 
   .recommend__top_stars span img {
