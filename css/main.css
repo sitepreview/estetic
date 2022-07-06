@@ -5156,21 +5156,19 @@ section .sitemap__title {
   margin-left: 62px;
 }
 
-.sitemap__levels a {
+.sitemap-first a {
+  font-size: 32px;
   color: #000;
 }
 
-.sitemap-first a {
-  font-size: 32px;
-}
-
 .sitemap-second a {
-  color: #55721E;
+  /*color: #55721E;mcolor*/
   font-size: 26px;
 }
 
 .sitemap-third a {
   font-size: 22px;
+  color: #000;
 }
 
 .sitemap-fourth a {
